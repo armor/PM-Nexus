@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "agentvibes": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "--package=agentvibes",
+        "agentvibes-mcp-server"
+      ]
+    },
+    "jira": {
+      "command": "node",
+      "args": ["./submodules/jira-mcp/dist/index.js"],
+      "env": {
+        "JIRA_HOST": "armor-defense.atlassian.net",
+        "JIRA_EMAIL": "phillip.boles@armor.com",
+        "JIRA_API_TOKEN": "${JIRA_API_TOKEN}",
+        "DEBUG": "false"
+      }
+    }
+  }
+}

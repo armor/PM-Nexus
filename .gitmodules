@@ -1,0 +1,9 @@
+[submodule "submodules/platform"]
+	path = submodules/platform
+	url = https://github.com/armor/platform.git
+[submodule "submodules/Armor-Dash"]
+	path = submodules/Armor-Dash
+	url = https://github.com/frankentini/Armor-Dash.git
+[submodule "submodules/jira-mcp"]
+	path = submodules/jira-mcp
+	url = https://github.com/armor/jira-mcp.git

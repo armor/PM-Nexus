@@ -1,0 +1,139 @@
+# BMAD Artifact Validation Schema
+# Used by artifact-watcher agent to enforce quality gates
+# Version: 1.0.0
+
+validation_rules:
+
+  epic:
+    min_words: 550
+    required_sections:
+      - "## Epic Summary"
+      - "## Business Value"
+      - "## Success Metrics"
+      - "## Epic Acceptance Criteria"
+      - "## Story Breakdown"
+      - "## Technical Architecture"
+      - "## Security Considerations"
+      - "## Risks & Mitigations"
+      - "## Definition of Done"
+      - "## Agent Review Log"
+    required_fields:
+      - "Status:"
+      - "Priority:"
+      - "Owner:"
+      - "Created:"
+    min_stories: 3
+    min_acceptance_criteria: 3
+    business_value_required: true
+    success_metrics_required: true
+
+  story:
+    min_words: 200
+    required_sections:
+      - "## Story"
+      - "## Business Value"
+      - "## Acceptance Criteria"
+      - "## Definition of Ready"
+      - "## Definition of Done"
+      - "## Git Worktree Configuration"
+      - "## Commit Standards"
+      - "## PR Requirements"
+      - "## Tasks"
+      - "## Technical Specifications"
+      - "## Security Considerations"
+      - "## Testing Requirements"
+      - "## Dependencies"
+      - "## Agent Review Log"
+    required_fields:
+      - "Status:"
+      - "Epic:"
+      - "Sprint:"
+      - "Points:"
+      - "Priority:"
+    min_acceptance_criteria: 3
+    min_tasks: 2
+    ac_format: "given_when_then"  # Must have Given/When/Then
+    worktree_config_required: true
+
+  task:
+    min_words: 100
+    required_sections:
+      - "## Task Description"
+      - "## Worktree Context"
+      - "## Pre-Conditions"
+      - "## Subtasks"
+      - "## Technical Approach"
+      - "## Testing Requirements"
+      - "## Done Criteria"
+      - "## Agent Review Log"
+    required_fields:
+      - "Status:"
+      - "Parent Story:"
+      - "Acceptance Criteria Coverage:"
+      - "Estimated Hours:"
+    min_subtasks: 1
+    max_hours: 16
+    worktree_binding_required: true
+    file_reservation_required: true
+
+  subtask:
+    min_words: 50
+    required_sections:
+      - "## Description"
+      - "## Worktree & File Lock Context"
+      - "## Pre-Conditions"
+      - "## In-Scope"
+      - "## Out-of-Scope"
+      - "## Done Criteria"
+      - "## Agent Signoff"
+    required_fields:
+      - "Status:"
+      - "Parent Task:"
+      - "Parent Story:"
+      - "Estimated Hours:"
+      - "Complexity:"
+    min_done_criteria: 2
+    max_hours: 4
+    file_lock_required: true
+    in_scope_files_required: true
+
+# Validation states
+validation_states:
+  passed: "Artifact meets all validation criteria"
+  failed_structure: "Missing required sections"
+  failed_content: "Insufficient content (word count, criteria count)"
+  failed_format: "Content format invalid (e.g., AC not in Given/When/Then)"
+  failed_consistency: "Cross-reference errors (e.g., referenced story doesn't exist)"
+  failed_worktree: "Worktree configuration missing or invalid"
+  pending_validation: "Awaiting validation"
+
+# Quality scoring weights
+scoring_weights:
+  structure_completeness: 0.25
+  content_depth: 0.25
+  format_compliance: 0.20
+  cross_reference_validity: 0.15
+  worktree_config: 0.15
+
+# Minimum scores to pass
+minimum_scores:
+  epic: 70
+  story: 70
+  task: 75
+  subtask: 80
+
+# Validation frequency
+validation_triggers:
+  - on_create
+  - on_update
+  - on_status_change
+  - pre_sync_to_jira
+  - scheduled_daily
+
+# Failed validation actions
+on_validation_failure:
+  update_status: "failed-ai-validation"
+  block_execution: true
+  block_jira_sync: true
+  notify_owner: true
+  log_to_audit: true

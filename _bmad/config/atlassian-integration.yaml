@@ -1,0 +1,187 @@
+# BMAD-Atlassian Integration Configuration
+# Uses: https://github.com/atlassian/atlassian-mcp-server (official)
+
+# =============================================================================
+# MCP SERVER SETUP (ONE-TIME)
+# =============================================================================
+# 1. Install the official Atlassian MCP server:
+#    npm install -g @anthropic/atlassian-mcp-server
+#
+# 2. Add to Claude Desktop config (~/.config/claude/claude_desktop_config.json):
+#    {
+#      "mcpServers": {
+#        "atlassian": {
+#          "command": "atlassian-mcp-server",
+#          "args": []
+#        }
+#      }
+#    }
+#
+# 3. On first use, you'll be prompted to authenticate via OAuth 2.0
+#    - Opens browser to Atlassian Cloud
+#    - Grant access to your JIRA/Confluence site
+#    - Token is cached automatically
+#
+# Available MCP Tools (after setup):
+#   - jira_search: Search issues with natural language
+#   - jira_create: Create issues (stories, epics, tasks)
+#   - jira_update: Update existing issues
+#   - jira_bulk_create: Create multiple issues at once
+#   - confluence_search: Find pages
+#   - confluence_create: Create new pages
+#   - confluence_summarize: Get page summaries
+# =============================================================================
+
+# =============================================================================
+# ATLASSIAN CLOUD SETTINGS
+# =============================================================================
+atlassian:
+  # Your Atlassian Cloud site
+  site_url: https://armor-defense.atlassian.net
+  cloud_id: d6186f8a-bd21-40c5-95ea-7bd4db408202
+
+# =============================================================================
+# JIRA SETTINGS
+# =============================================================================
+jira:
+  # REQUIRED: Your JIRA project key
+  project_key: ARGUS
+
+  # Custom field IDs - find via natural language query:
+  #   "What custom fields exist in ARGUS project?"
+  custom_fields:
+    epic_link: customfield_10013  # Fixed: was 10014 (Start date)
+    epic_name: customfield_10010
+    story_points: customfield_10016
+    sprint: customfield_10020
+    parent_link: customfield_10015
+
+# =============================================================================
+# WATCHER SETTINGS
+# =============================================================================
+watcher:
+  enabled: true
+  poll_interval: 300  # seconds (5 minutes)
+
+  # Natural language query for watcher (replaces JQL)
+  watch_query: "new stories, tasks, or bugs in ARGUS project"
+
+  # Auto-assign epic based on JIRA labels
+  epic_mapping:
+    platform: EPIC-1
+    graph: EPIC-2
+    risk: EPIC-3
+    automation: EPIC-4
+    ux: EPIC-5
+    integration: EPIC-6
+    differentiation: EPIC-7
+    dominance: EPIC-8
+    operations: EPIC-9
+
+  # Optional Slack notification
+  notify:
+    slack_webhook: null  # Set to enable
+
+# =============================================================================
+# FIELD MAPPING
+# =============================================================================
+fields:
+  # Sync both directions
+  bidirectional:
+    - summary
+    - description
+    - status
+    - priority
+    - story_points
+
+  # JIRA → BMAD only
+  pull_only:
+    - assignee
+    - comments
+    - created
+    - reporter
+
+  # BMAD → JIRA only (on approve)
+  push_only:
+    - acceptance_criteria
+
+  # Never sync (BMAD local only)
+  bmad_only:
+    - technical_notes
+    - implementation_details
+
+# =============================================================================
+# PRIORITY/STATUS MAPPINGS
+# =============================================================================
+priority_map:
+  bmad_to_jira:
+    P0: Critical  # Fixed: was "Highest" which doesn't exist
+    P1: High
+    P2: Medium
+    P3: Low
+  jira_to_bmad:
+    Critical: P0
+    High: P1
+    Medium: P2
+    Low: P3
+
+status_map:
+  bmad_to_jira:
+    Ready: To Do
+    In Progress: In Progress
+    In Review: In Review
+    Done: Done
+    Blocked: Blocked
+  jira_to_bmad:
+    To Do: Ready
+    Open: Ready
+    In Progress: In Progress
+    In Review: In Review
+    Done: Done
+    Closed: Done
+    Blocked: Blocked
+
+# =============================================================================
+# CONFLUENCE SETTINGS
+# =============================================================================
+confluence:
+  # Confluence space key for architecture docs
+  space_key: ARGUS
+
+  # Parent page for architecture documents (optional)
+  # Find via: "Find the Architecture parent page in ARGUS space"
+  parent_page_title: "Architecture"
+
+  # Parent pages for different content types
+  parent_pages:
+    epics: "Epic Documentation"
+    architecture: "Architecture"
+
+  # Document mappings: local path → Confluence page title
+  document_mapping:
+    # Epic full documentation (500+ lines) → Confluence
+    .bmad/planning-artifacts/epics/EPIC-1-PLATFORM-full.md: "EPIC-1: Platform Foundation"
+    .bmad/planning-artifacts/epics/EPIC-2-full.md: "EPIC-2: Attack Graph Engine"
+    .bmad/planning-artifacts/epics/EPIC-3-full.md: "EPIC-3: Risk Scoring Engine"
+    .bmad/planning-artifacts/epics/EPIC-4-full.md: "EPIC-4: Policy & Automation"
+    .bmad/planning-artifacts/epics/EPIC-5-full.md: "EPIC-5: User Experience"
+    .bmad/planning-artifacts/epics/EPIC-6-full.md: "EPIC-6: Scanner Integration"
+    .bmad/planning-artifacts/epics/EPIC-7-full.md: "EPIC-7: Differentiation Features"
+    .bmad/planning-artifacts/epics/EPIC-8-EXEC-COMPLIANCE-full.md: "EPIC-8: Executive & Compliance Dashboards"
+    .bmad/planning-artifacts/epics/EPIC-8-PLATFORM-DOMINANCE-full.md: "EPIC-8: Platform Dominance"
+    .bmad/planning-artifacts/epics/EPIC-9-OPERATIONS-full.md: "EPIC-9: Operations & Reliability"
+    .bmad/planning-artifacts/epics/EPIC-9-POLICY-AI-full.md: "EPIC-9: Policy AI Engine"
+    .bmad/planning-artifacts/epics/EPIC-11-full.md: "EPIC-11: Cartography NebulaGraph"
+    .bmad/planning-artifacts/epics/EPIC-AUTH-001-full.md: "EPIC-AUTH-001: Unified Scanner Auth"
+
+    # Architecture documentation
+    docs/ARCHITECTURE_OVERVIEW.md: "Architecture Overview"
+    docs/SECURITY_BOUNDARIES.md: "Security Boundaries"
+    docs/architecture/: "Architecture/"  # Sync entire folder
+
+  # Sync settings
+  sync:
+    enabled: true
+    convert_markdown: true
+    include_diagrams: true
+    add_sync_footer: true

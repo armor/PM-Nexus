@@ -1,0 +1,142 @@
+# BMAD Agent Performance Tracking
+# Tracks agent accuracy, signoffs, and outcomes for calibration
+# Version: 1.0.0
+
+# Agent performance metrics
+agent_metrics: {}
+  # Example:
+  # code-reviewer:
+  #   model: claude-opus-4-5
+  #   version: 1.0.0
+  #   total_reviews: 47
+  #
+  #   decisions:
+  #     approved: 42
+  #     rejected: 3
+  #     needs_changes: 2
+  #     escalate_to_human: 0
+  #
+  #   accuracy:
+  #     correct_approvals: 41
+  #     false_positives: 1      # approved but had issues post-merge
+  #     correct_rejections: 3
+  #     false_negatives: 0      # rejected but shouldn't have
+  #
+  #   derived_metrics:
+  #     accuracy_rate: 0.936
+  #     precision: 0.976        # correct_approvals / (correct_approvals + false_positives)
+  #     recall: 1.0             # correct_approvals / (correct_approvals + false_negatives)
+  #     f1_score: 0.988
+  #
+  #   confidence_stats:
+  #     avg_confidence: 0.87
+  #     min_confidence: 0.65
+  #     max_confidence: 0.98
+  #     confidence_calibration: 0.92  # how well confidence predicts accuracy
+  #
+  #   timing_stats:
+  #     avg_duration_seconds: 95
+  #     min_duration_seconds: 30
+  #     max_duration_seconds: 300
+  #
+  #   human_agreement:
+  #     total_human_reviews: 45
+  #     agreements: 42
+  #     disagreements: 3
+  #     agreement_rate: 0.933
+  #
+  #   last_updated: 2026-01-02T16:00:00Z
+
+# Signoff audit log (append-only)
+signoff_log: []
+  # Example:
+  # - signoff_id: uuid
+  #   timestamp: 2026-01-02T10:30:00Z
+  #
+  #   artifact:
+  #     type: story
+  #     id: AUTH-001.2
+  #     file: _bmad/implementation-artifacts/auth-001-2-auth-gateway-service.md
+  #
+  #   agent:
+  #     name: story-validator
+  #     model: claude-opus-4-5-20251101
+  #     version: 1.0.0
+  #     session_id: sess_abc123
+  #
+  #   review:
+  #     type: validation
+  #     duration_seconds: 45
+  #     checks_performed: 12
+  #     checks_passed: 11
+  #     checks_failed: 1
+  #
+  #   decision:
+  #     result: approved  # approved | rejected | needs-changes | escalate
+  #     confidence: 0.92
+  #     reasoning: "All DoR criteria met except minor formatting in AC3"
+  #     concerns: ["AC3 missing 'And' clause"]
+  #
+  #   outcome:
+  #     verified: null      # null until post-merge review
+  #     correct: null
+  #     issues_found: null
+  #     human_override: false
+  #     human_notes: null
+
+# Calibration thresholds
+# If agent accuracy drops below these, require additional review
+calibration_thresholds:
+  accuracy_rate_min: 0.85
+  human_agreement_min: 0.80
+  confidence_calibration_min: 0.75
+
+  # Actions when below threshold
+  below_threshold_actions:
+    - require_human_review
+    - increase_confidence_threshold
+    - alert_owner
+    - log_for_retraining
+
+# Quality gates by agent type
+quality_gates:
+  story-validator:
+    min_confidence: 0.70
+    require_human_for: []
+
+  code-reviewer:
+    min_confidence: 0.80
+    require_human_for:
+      - security_relevant_changes
+      - architectural_changes
+
+  security-reviewer:
+    min_confidence: 0.90
+    require_human_for:
+      - authentication_changes
+      - authorization_changes
+      - crypto_changes
+
+  artifact-watcher:
+    min_confidence: 0.85
+    require_human_for: []
+
+# Performance summary (updated daily)
+daily_summary: {}
+  # Example:
+  # 2026-01-02:
+  #   total_signoffs: 25
+  #   by_agent:
+  #     story-validator: 5
+  #     code-reviewer: 12
+  #     security-reviewer: 3
+  #     artifact-watcher: 5
+  #   accuracy:
+  #     overall: 0.92
+  #     by_agent:
+  #       story-validator: 1.0
+  #       code-reviewer: 0.92
+  #       security-reviewer: 1.0
+  #       artifact-watcher: 0.80
+  #   human_overrides: 2
+  #   escalations: 1

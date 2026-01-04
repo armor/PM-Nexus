@@ -1,0 +1,86 @@
+# BMAD Worktree Lock Registry
+# Tracks active worktrees and file locks for parallel execution safety
+# Updated by: worktree-manager agent
+# Version: 1.0.0
+
+# Active worktrees
+worktrees: {}
+  # Example:
+  # wt-AUTH-001-2-abc123:
+  #   story_id: AUTH-001.2
+  #   repo: argus-common
+  #   path: worktrees/argus-common-AUTH-001-2/
+  #   branch: AUTH-001-2-auth-gateway-service
+  #   base_branch: main
+  #   created_at: 2026-01-02T10:00:00Z
+  #   created_by: dev-agent
+  #   status: active  # active | completed | abandoned
+  #
+  #   file_locks:
+  #     - file: src/auth/gateway.rs
+  #       locked_by: AUTH-001.2.1.1
+  #       locked_at: 2026-01-02T10:05:00Z
+  #       lock_type: exclusive
+  #
+  #     - file: src/auth/hmac.rs
+  #       locked_by: null
+  #       lock_type: available
+  #
+  #   active_tasks:
+  #     - task_id: AUTH-001.2.1
+  #       status: in-progress
+  #       started_at: 2026-01-02T10:00:00Z
+  #
+  #   active_subtasks:
+  #     - subtask_id: AUTH-001.2.1.1
+  #       status: in-progress
+  #       files_locked: [src/auth/gateway.rs]
+  #       started_at: 2026-01-02T10:05:00Z
+
+# Multi-repo story coordination
+multi_repo_stories: {}
+  # Example:
+  # AUTH-001.6:
+  #   primary_repo: argus-ui
+  #   repos:
+  #     - repo: argus-common
+  #       worktree_id: wt-AUTH-001-6-common
+  #       status: completed
+  #       pr: "#45"
+  #     - repo: argus-api
+  #       worktree_id: wt-AUTH-001-6-api
+  #       status: in-progress
+  #       pr: null
+  #     - repo: argus-ui
+  #       worktree_id: wt-AUTH-001-6-ui
+  #       status: pending
+  #       pr: null
+  #   execution_order: [argus-common, argus-api, argus-ui]
+  #   merge_order: [argus-common, argus-api, argus-ui]
+
+# Lock acquisition queue
+pending_locks: []
+  # Example:
+  # - file: src/auth/gateway.rs
+  #   requested_by: AUTH-001.2.2.1
+  #   requested_at: 2026-01-02T10:10:00Z
+  #   waiting_for: AUTH-001.2.1.1
+
+# Lock history (for debugging)
+lock_history: []
+  # Example:
+  # - file: src/auth/gateway.rs
+  #   action: acquired
+  #   by: AUTH-001.2.1.1
+  #   at: 2026-01-02T10:05:00Z
+  # - file: src/auth/gateway.rs
+  #   action: released
+  #   by: AUTH-001.2.1.1
+  #   at: 2026-01-02T11:00:00Z
+
+# Configuration
+config:
+  lock_timeout_minutes: 60
+  max_locks_per_subtask: 5
+  allow_shared_locks: false
+  require_lock_for_execution: true

@@ -1,0 +1,33 @@
+# Environment files (contain secrets)
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Build artifacts
+dist/
+build/
+*.log
+
+# MCP server secrets
+submodules/jira-mcp/.env
+
+# Worktrees (managed separately)
+worktrees/
+
+# Audio/TTS cache
+.claude/audio/
+
+# Python cache
+scripts/__pycache__/

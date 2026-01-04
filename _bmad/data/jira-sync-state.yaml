@@ -1,0 +1,2407 @@
+conflicts: []
+items:
+  AUTH-001:
+    bmad_hash: synced
+    jira_key: ARGUS-22
+    last_sync: '2026-01-03T01:34:17.869859Z'
+  AUTH-002:
+    bmad_hash: synced
+    jira_key: ARGUS-23
+    last_sync: '2026-01-03T01:34:17.869861Z'
+  AUTH-002a:
+    bmad_hash: synced
+    jira_key: ARGUS-24
+    last_sync: '2026-01-03T01:34:17.869862Z'
+  AUTH-002b:
+    bmad_hash: synced
+    jira_key: ARGUS-25
+    last_sync: '2026-01-03T01:34:17.869864Z'
+  AUTH-002c:
+    bmad_hash: synced
+    jira_key: ARGUS-26
+    last_sync: '2026-01-03T01:34:17.869865Z'
+  AUTH-002d:
+    bmad_hash: synced
+    jira_key: ARGUS-27
+    last_sync: '2026-01-03T01:34:17.869866Z'
+  AUTH-003:
+    bmad_hash: synced
+    jira_key: ARGUS-28
+    last_sync: '2026-01-03T01:34:17.869868Z'
+  AUTH-004:
+    bmad_hash: synced
+    jira_key: ARGUS-29
+    last_sync: '2026-01-03T01:34:17.869869Z'
+  AUTH-005:
+    bmad_hash: synced
+    jira_key: ARGUS-30
+    last_sync: '2026-01-03T01:34:17.869870Z'
+  AUTH-006:
+    bmad_hash: synced
+    jira_key: ARGUS-31
+    last_sync: '2026-01-03T01:34:17.869871Z'
+  AUTH-007:
+    bmad_hash: synced
+    jira_key: ARGUS-32
+    last_sync: '2026-01-03T01:34:17.869873Z'
+  AUTH-008:
+    bmad_hash: synced
+    jira_key: ARGUS-33
+    last_sync: '2026-01-03T01:34:17.869874Z'
+  AUTO-001:
+    bmad_hash: synced
+    jira_key: ARGUS-311
+    last_sync: '2026-01-03T01:34:17.870250Z'
+  AUTO-002:
+    bmad_hash: synced
+    jira_key: ARGUS-312
+    last_sync: '2026-01-03T01:34:17.870252Z'
+  AUTO-003:
+    bmad_hash: synced
+    jira_key: ARGUS-313
+    last_sync: '2026-01-03T01:34:17.870253Z'
+  AUTO-004:
+    bmad_hash: synced
+    jira_key: ARGUS-314
+    last_sync: '2026-01-03T01:34:17.870255Z'
+  AUTO-005:
+    bmad_hash: synced
+    jira_key: ARGUS-315
+    last_sync: '2026-01-03T01:34:17.870256Z'
+  AUTO-006:
+    bmad_hash: synced
+    jira_key: ARGUS-316
+    last_sync: '2026-01-03T01:34:17.870258Z'
+  AUTO-007:
+    bmad_hash: synced
+    jira_key: ARGUS-317
+    last_sync: '2026-01-03T01:34:17.870259Z'
+  AUTO-008:
+    bmad_hash: synced
+    jira_key: ARGUS-318
+    last_sync: '2026-01-03T01:34:17.870260Z'
+  AUTO-009:
+    bmad_hash: synced
+    jira_key: ARGUS-319
+    last_sync: '2026-01-03T01:34:17.870261Z'
+  AUTO-010:
+    bmad_hash: synced
+    jira_key: ARGUS-320
+    last_sync: '2026-01-03T01:34:17.870263Z'
+  AUTO-011:
+    bmad_hash: synced
+    jira_key: ARGUS-321
+    last_sync: '2026-01-03T01:34:17.870264Z'
+  AUTO-012:
+    bmad_hash: synced
+    jira_key: ARGUS-322
+    last_sync: '2026-01-03T01:34:17.870265Z'
+  AUTO-100:
+    bmad_hash: synced
+    jira_key: ARGUS-323
+    last_sync: '2026-01-03T01:34:17.870266Z'
+  AUTO-101:
+    bmad_hash: synced
+    jira_key: ARGUS-324
+    last_sync: '2026-01-03T01:34:17.870268Z'
+  AUTO-102:
+    bmad_hash: synced
+    jira_key: ARGUS-325
+    last_sync: '2026-01-03T01:34:17.870269Z'
+  AUTO-103:
+    bmad_hash: synced
+    jira_key: ARGUS-326
+    last_sync: '2026-01-03T01:34:17.870270Z'
+  AUTO-104:
+    bmad_hash: synced
+    jira_key: ARGUS-327
+    last_sync: '2026-01-03T01:34:17.870272Z'
+  AUTO-105:
+    bmad_hash: synced
+    jira_key: ARGUS-328
+    last_sync: '2026-01-03T01:34:17.870273Z'
+  AUTO-106:
+    bmad_hash: synced
+    jira_key: ARGUS-329
+    last_sync: '2026-01-03T01:34:17.870275Z'
+  AUTO-107:
+    bmad_hash: synced
+    jira_key: ARGUS-330
+    last_sync: '2026-01-03T01:34:17.870276Z'
+  AUTO-108:
+    bmad_hash: synced
+    jira_key: ARGUS-331
+    last_sync: '2026-01-03T01:34:17.870277Z'
+  AUTO-109:
+    bmad_hash: synced
+    jira_key: ARGUS-332
+    last_sync: '2026-01-03T01:34:17.870279Z'
+  AUTO-110:
+    bmad_hash: synced
+    jira_key: ARGUS-333
+    last_sync: '2026-01-03T01:34:17.870280Z'
+  AUTO-111:
+    bmad_hash: synced
+    jira_key: ARGUS-334
+    last_sync: '2026-01-03T01:34:17.870281Z'
+  AUTO-112:
+    bmad_hash: synced
+    jira_key: ARGUS-335
+    last_sync: '2026-01-03T01:34:17.870282Z'
+  AUTO-113:
+    bmad_hash: synced
+    jira_key: ARGUS-336
+    last_sync: '2026-01-03T01:34:17.870284Z'
+  AUTO-114:
+    bmad_hash: synced
+    jira_key: ARGUS-337
+    last_sync: '2026-01-03T01:34:17.870285Z'
+  AUTO-115:
+    bmad_hash: synced
+    jira_key: ARGUS-338
+    last_sync: '2026-01-03T01:34:17.870286Z'
+  AUTO-116:
+    bmad_hash: synced
+    jira_key: ARGUS-339
+    last_sync: '2026-01-03T01:34:17.870287Z'
+  AUTO-117:
+    bmad_hash: synced
+    jira_key: ARGUS-340
+    last_sync: '2026-01-03T01:34:17.870288Z'
+  AUTO-118:
+    bmad_hash: 8c77466dd6c8
+    jira_key: ARGUS-415
+    last_sync: '2026-01-03T01:53:21.003732Z'
+  AUTO-119:
+    bmad_hash: 7a154dc2f370
+    jira_key: ARGUS-416
+    last_sync: '2026-01-03T01:53:22.442937Z'
+  AUTO-120:
+    bmad_hash: 87b0f80fffb3
+    jira_key: ARGUS-417
+    last_sync: '2026-01-03T01:53:23.770721Z'
+  AUTO-121:
+    bmad_hash: 72f3dabca4bd
+    jira_key: ARGUS-418
+    last_sync: '2026-01-03T01:53:24.999560Z'
+  AUTO-122:
+    bmad_hash: 53c330263801
+    jira_key: ARGUS-419
+    last_sync: '2026-01-03T01:53:26.330289Z'
+  AUTO-123:
+    bmad_hash: 421a5311664e
+    jira_key: ARGUS-420
+    last_sync: '2026-01-03T01:53:27.547376Z'
+  AUTO-124:
+    bmad_hash: '727152176792'
+    jira_key: ARGUS-421
+    last_sync: '2026-01-03T01:53:29.812810Z'
+  AUTO-125:
+    bmad_hash: dd24676c4022
+    jira_key: ARGUS-422
+    last_sync: '2026-01-03T01:53:31.114701Z'
+  AUTO-126:
+    bmad_hash: feb67185288e
+    jira_key: ARGUS-423
+    last_sync: '2026-01-03T01:53:32.312550Z'
+  AUTO-127:
+    bmad_hash: 5d34371339d2
+    jira_key: ARGUS-424
+    last_sync: '2026-01-03T01:53:33.705585Z'
+  AUTO-128:
+    bmad_hash: f67ec55ffe5a
+    jira_key: ARGUS-425
+    last_sync: '2026-01-03T01:53:35.034159Z'
+  AUTO-129:
+    bmad_hash: d7b56a76f2ba
+    jira_key: ARGUS-426
+    last_sync: '2026-01-03T01:53:36.320589Z'
+  AUTO-130:
+    bmad_hash: 8b7c8cab8569
+    jira_key: ARGUS-427
+    last_sync: '2026-01-03T01:53:37.633958Z'
+  AUTO-131:
+    bmad_hash: e6fb5165aaa9
+    jira_key: ARGUS-428
+    last_sync: '2026-01-03T01:53:38.958580Z'
+  AUTO-132:
+    bmad_hash: c4edc3db4bdd
+    jira_key: ARGUS-429
+    last_sync: '2026-01-03T01:53:40.154939Z'
+  AUTO-133:
+    bmad_hash: 0c60112ab656
+    jira_key: ARGUS-430
+    last_sync: '2026-01-03T01:53:41.472763Z'
+  AUTO-134:
+    bmad_hash: edcb4cdc623b
+    jira_key: ARGUS-431
+    last_sync: '2026-01-03T01:53:42.693699Z'
+  AUTO-135:
+    bmad_hash: 47e6ccbf4c27
+    jira_key: ARGUS-432
+    last_sync: '2026-01-03T01:53:43.949733Z'
+  AUTO-136:
+    bmad_hash: 9372c1b053bb
+    jira_key: ARGUS-433
+    last_sync: '2026-01-03T01:53:45.275381Z'
+  AUTO-137:
+    bmad_hash: 1db50332a2f8
+    jira_key: ARGUS-434
+    last_sync: '2026-01-03T01:53:46.486002Z'
+  AUTO-138:
+    bmad_hash: 253f4a7b0936
+    jira_key: ARGUS-435
+    last_sync: '2026-01-03T01:53:47.734271Z'
+  AUTO-139:
+    bmad_hash: d3ce34b51a77
+    jira_key: ARGUS-436
+    last_sync: '2026-01-03T01:53:49.065223Z'
+  AUTO-140:
+    bmad_hash: b3ceac483f08
+    jira_key: ARGUS-437
+    last_sync: '2026-01-03T01:53:50.386939Z'
+  AUTO-141:
+    bmad_hash: 087e6b6b0570
+    jira_key: ARGUS-438
+    last_sync: '2026-01-03T01:53:51.621388Z'
+  AUTO-142:
+    bmad_hash: 051fccaac8b3
+    jira_key: ARGUS-439
+    last_sync: '2026-01-03T01:53:52.956453Z'
+  AUTO-143:
+    bmad_hash: f3ddb29900c4
+    jira_key: ARGUS-440
+    last_sync: '2026-01-03T01:53:54.137870Z'
+  AUTO-144:
+    bmad_hash: f7cca024687a
+    jira_key: ARGUS-441
+    last_sync: '2026-01-03T01:53:55.309107Z'
+  AUTO-145:
+    bmad_hash: 3d46288e6b1d
+    jira_key: ARGUS-442
+    last_sync: '2026-01-03T01:53:56.551948Z'
+  AUTO-146:
+    bmad_hash: 321b3bf87513
+    jira_key: ARGUS-443
+    last_sync: '2026-01-03T01:53:57.870846Z'
+  AUTO-147:
+    bmad_hash: 41d5f48236b8
+    jira_key: ARGUS-444
+    last_sync: '2026-01-03T01:53:59.098441Z'
+  AUTO-148:
+    bmad_hash: 8358fdc6adb8
+    jira_key: ARGUS-445
+    last_sync: '2026-01-03T01:54:00.427519Z'
+  AUTO-149:
+    bmad_hash: 9c6dc6053576
+    jira_key: ARGUS-446
+    last_sync: '2026-01-03T01:54:01.751070Z'
+  AUTO-150:
+    bmad_hash: 9997001f7d6f
+    jira_key: ARGUS-447
+    last_sync: '2026-01-03T01:54:03.067536Z'
+  AUTO-151:
+    bmad_hash: 321068665e85
+    jira_key: ARGUS-448
+    last_sync: '2026-01-03T01:54:04.322066Z'
+  AUTO-152:
+    bmad_hash: 0badf58a2d5c
+    jira_key: ARGUS-449
+    last_sync: '2026-01-03T01:54:05.653564Z'
+  AUTO-153:
+    bmad_hash: 5839c64b6158
+    jira_key: ARGUS-450
+    last_sync: '2026-01-03T01:54:06.882059Z'
+  AUTO-154:
+    bmad_hash: ac53aa71d33b
+    jira_key: ARGUS-451
+    last_sync: '2026-01-03T01:54:08.010059Z'
+  AUTO-155:
+    bmad_hash: 14e03133d513
+    jira_key: ARGUS-452
+    last_sync: '2026-01-03T01:54:09.250447Z'
+  AUTO-156:
+    bmad_hash: 8a54aa41f78d
+    jira_key: ARGUS-453
+    last_sync: '2026-01-03T01:54:10.414348Z'
+  AUTO-157:
+    bmad_hash: bfd0cdb5e7b3
+    jira_key: ARGUS-454
+    last_sync: '2026-01-03T01:54:11.741576Z'
+  AUTO-158:
+    bmad_hash: 6f978219338a
+    jira_key: ARGUS-455
+    last_sync: '2026-01-03T01:54:12.924611Z'
+  AUTO-159:
+    bmad_hash: bd30926fd23d
+    jira_key: ARGUS-456
+    last_sync: '2026-01-03T01:54:14.254974Z'
+  AUTO-160:
+    bmad_hash: 069f4e7af2fe
+    jira_key: ARGUS-457
+    last_sync: '2026-01-03T01:54:15.585064Z'
+  AUTO-161:
+    bmad_hash: a6824bbf30c0
+    jira_key: ARGUS-458
+    last_sync: '2026-01-03T01:54:16.884871Z'
+  AUTO-162:
+    bmad_hash: ba66fc330e87
+    jira_key: ARGUS-459
+    last_sync: '2026-01-03T01:54:18.146926Z'
+  AUTO-163:
+    bmad_hash: b4cb3d440ceb
+    jira_key: ARGUS-460
+    last_sync: '2026-01-03T01:54:19.375569Z'
+  AUTO-164:
+    bmad_hash: d15ba28f4262
+    jira_key: ARGUS-461
+    last_sync: '2026-01-03T01:54:20.695772Z'
+  CARTO-001:
+    bmad_hash: afabc73f3a9b
+    jira_key: ARGUS-391
+    last_sync: '2026-01-03T01:51:45.975266Z'
+  CARTO-002:
+    bmad_hash: 5e671b8b7196
+    jira_key: ARGUS-392
+    last_sync: '2026-01-03T01:51:47.268906Z'
+  CARTO-003:
+    bmad_hash: 79ff6eb8aece
+    jira_key: ARGUS-393
+    last_sync: '2026-01-03T01:51:48.653820Z'
+  CARTO-005:
+    bmad_hash: bf6096d2ff7e
+    jira_key: ARGUS-394
+    last_sync: '2026-01-03T01:51:50.160745Z'
+  CARTO-006:
+    bmad_hash: 8281569c3bbe
+    jira_key: ARGUS-395
+    last_sync: '2026-01-03T01:51:51.731593Z'
+  CARTO-007:
+    bmad_hash: e2aea0904c33
+    jira_key: ARGUS-396
+    last_sync: '2026-01-03T01:51:52.917431Z'
+  CARTO-008:
+    bmad_hash: fef691d911cb
+    jira_key: ARGUS-397
+    last_sync: '2026-01-03T01:51:54.373999Z'
+  CARTO-009:
+    bmad_hash: 4ba3604cfdf8
+    jira_key: ARGUS-398
+    last_sync: '2026-01-03T01:51:55.626016Z'
+  CARTO-010:
+    bmad_hash: e5d24de9e976
+    jira_key: ARGUS-399
+    last_sync: '2026-01-03T01:51:56.859030Z'
+  CARTO-011:
+    bmad_hash: dc664e051f97
+    jira_key: ARGUS-400
+    last_sync: '2026-01-03T01:51:58.145648Z'
+  CARTO-012:
+    bmad_hash: 556963eeac75
+    jira_key: ARGUS-401
+    last_sync: '2026-01-03T01:51:59.452787Z'
+  CARTO-013:
+    bmad_hash: 9d45fcb08f8c
+    jira_key: ARGUS-402
+    last_sync: '2026-01-03T01:52:00.826348Z'
+  CARTO-014:
+    bmad_hash: 5908f79660a5
+    jira_key: ARGUS-403
+    last_sync: '2026-01-03T01:52:02.120679Z'
+  CARTO-015:
+    bmad_hash: 92aaca31efb2
+    jira_key: ARGUS-404
+    last_sync: '2026-01-03T01:52:03.593670Z'
+  CARTO-016:
+    bmad_hash: a75b77289549
+    jira_key: ARGUS-405
+    last_sync: '2026-01-03T01:52:04.843094Z'
+  CARTO-017:
+    bmad_hash: a77a5ff017cd
+    jira_key: ARGUS-406
+    last_sync: '2026-01-03T01:52:05.954749Z'
+  CARTO-018:
+    bmad_hash: ac1b7c2388b9
+    jira_key: ARGUS-407
+    last_sync: '2026-01-03T01:52:07.061072Z'
+  CARTO-019:
+    bmad_hash: a4294fe9fdb9
+    jira_key: ARGUS-408
+    last_sync: '2026-01-03T01:52:08.343275Z'
+  CARTO-020:
+    bmad_hash: 9b8ddcc006af
+    jira_key: ARGUS-409
+    last_sync: '2026-01-03T01:52:09.514444Z'
+  CARTO-022:
+    bmad_hash: 66102337a742
+    jira_key: ARGUS-410
+    last_sync: '2026-01-03T01:52:10.860923Z'
+  CARTO-023:
+    bmad_hash: 590d2eefc826
+    jira_key: ARGUS-411
+    last_sync: '2026-01-03T01:52:12.292623Z'
+  CARTO-024:
+    bmad_hash: c037a15f674b
+    jira_key: ARGUS-412
+    last_sync: '2026-01-03T01:52:13.624324Z'
+  CARTO-025:
+    bmad_hash: 3ad14baf3daa
+    jira_key: ARGUS-413
+    last_sync: '2026-01-03T01:52:14.741238Z'
+  CARTO-026:
+    bmad_hash: 5602f72b8cfb
+    jira_key: ARGUS-414
+    last_sync: '2026-01-03T01:52:15.993376Z'
+  COMP-001:
+    bmad_hash: 25dd035585d0
+    jira_key: ARGUS-621
+    last_sync: '2026-01-03T01:58:10.567000Z'
+  COMP-002:
+    bmad_hash: 6ddf2a6df896
+    jira_key: ARGUS-622
+    last_sync: '2026-01-03T01:58:11.715757Z'
+  COMP-003:
+    bmad_hash: 6d436b89b46e
+    jira_key: ARGUS-623
+    last_sync: '2026-01-03T01:58:12.952991Z'
+  COMP-004:
+    bmad_hash: 20eb1043fb19
+    jira_key: ARGUS-624
+    last_sync: '2026-01-03T01:58:14.141070Z'
+  COMP-005:
+    bmad_hash: e66385e85a7b
+    jira_key: ARGUS-625
+    last_sync: '2026-01-03T01:58:15.386618Z'
+  DIFF-001:
+    bmad_hash: addc10d074fc
+    jira_key: ARGUS-561
+    last_sync: '2026-01-03T01:56:54.557431Z'
+  DIFF-002:
+    bmad_hash: ec12f721360c
+    jira_key: ARGUS-562
+    last_sync: '2026-01-03T01:56:55.845159Z'
+  DIFF-003:
+    bmad_hash: 1398947c3375
+    jira_key: ARGUS-563
+    last_sync: '2026-01-03T01:56:57.061194Z'
+  DIFF-004:
+    bmad_hash: edabc56532ae
+    jira_key: ARGUS-564
+    last_sync: '2026-01-03T01:56:58.272508Z'
+  DIFF-005:
+    bmad_hash: ae750bd73345
+    jira_key: ARGUS-565
+    last_sync: '2026-01-03T01:56:59.632549Z'
+  DIFF-006:
+    bmad_hash: 91b3e72cac4b
+    jira_key: ARGUS-566
+    last_sync: '2026-01-03T01:57:01.067473Z'
+  DIFF-007:
+    bmad_hash: a7b00c7b0bc1
+    jira_key: ARGUS-567
+    last_sync: '2026-01-03T01:57:02.296304Z'
+  DIFF-008:
+    bmad_hash: 68ec87762da9
+    jira_key: ARGUS-568
+    last_sync: '2026-01-03T01:57:03.523832Z'
+  DIFF-009:
+    bmad_hash: e355890ae748
+    jira_key: ARGUS-569
+    last_sync: '2026-01-03T01:57:04.960257Z'
+  DIFF-010:
+    bmad_hash: 75a11dbd804d
+    jira_key: ARGUS-570
+    last_sync: '2026-01-03T01:57:06.113619Z'
+  DIFF-011:
+    bmad_hash: 6654a68a7e79
+    jira_key: ARGUS-571
+    last_sync: '2026-01-03T01:57:07.456554Z'
+  DIFF-012:
+    bmad_hash: 6d86fa5233e5
+    jira_key: ARGUS-572
+    last_sync: '2026-01-03T01:57:08.627763Z'
+  DIFF-013:
+    bmad_hash: 63465d52b802
+    jira_key: ARGUS-573
+    last_sync: '2026-01-03T01:57:09.976716Z'
+  DIFF-014:
+    bmad_hash: 340c23e5df76
+    jira_key: ARGUS-574
+    last_sync: '2026-01-03T01:57:11.327223Z'
+  DIFF-015:
+    bmad_hash: 9126b09e6a1f
+    jira_key: ARGUS-575
+    last_sync: '2026-01-03T01:57:12.551154Z'
+  DIFF-016:
+    bmad_hash: e6fdb87a0dca
+    jira_key: ARGUS-576
+    last_sync: '2026-01-03T01:57:13.869515Z'
+  DIFF-017:
+    bmad_hash: 93f36d3ce603
+    jira_key: ARGUS-577
+    last_sync: '2026-01-03T01:57:15.197428Z'
+  DIFF-018:
+    bmad_hash: c2ebce76a01d
+    jira_key: ARGUS-578
+    last_sync: '2026-01-03T01:57:16.526840Z'
+  DIFF-019:
+    bmad_hash: 6880d79cd316
+    jira_key: ARGUS-579
+    last_sync: '2026-01-03T01:57:17.757789Z'
+  DIFF-020:
+    bmad_hash: bf8efc2a5198
+    jira_key: ARGUS-580
+    last_sync: '2026-01-03T01:57:18.987849Z'
+  DIFF-021:
+    bmad_hash: fd1573be91bd
+    jira_key: ARGUS-581
+    last_sync: '2026-01-03T01:57:20.215131Z'
+  DIFF-022:
+    bmad_hash: fbeb28436a01
+    jira_key: ARGUS-582
+    last_sync: '2026-01-03T01:57:21.550183Z'
+  DIFF-023:
+    bmad_hash: 11251c2168fb
+    jira_key: ARGUS-583
+    last_sync: '2026-01-03T01:57:22.805574Z'
+  DIFF-024:
+    bmad_hash: 78740b51331c
+    jira_key: ARGUS-584
+    last_sync: '2026-01-03T01:57:24.209698Z'
+  DIFF-025:
+    bmad_hash: cc09e22514e4
+    jira_key: ARGUS-585
+    last_sync: '2026-01-03T01:57:25.541282Z'
+  DIFF-026:
+    bmad_hash: 5dbc3974cd01
+    jira_key: ARGUS-586
+    last_sync: '2026-01-03T01:57:26.771318Z'
+  DIFF-027:
+    bmad_hash: 70490c84e87d
+    jira_key: ARGUS-587
+    last_sync: '2026-01-03T01:57:28.099770Z'
+  DIFF-028:
+    bmad_hash: fd37001e32d8
+    jira_key: ARGUS-588
+    last_sync: '2026-01-03T01:57:29.273788Z'
+  DIFF-029:
+    bmad_hash: ee025fd807bc
+    jira_key: ARGUS-589
+    last_sync: '2026-01-03T01:57:30.460483Z'
+  DIFF-030:
+    bmad_hash: 9c897c0defd1
+    jira_key: ARGUS-590
+    last_sync: '2026-01-03T01:57:31.631743Z'
+  DIFF-031:
+    bmad_hash: '995039960457'
+    jira_key: ARGUS-591
+    last_sync: '2026-01-03T01:57:33.015609Z'
+  DIFF-032:
+    bmad_hash: ebe54b225fd8
+    jira_key: ARGUS-592
+    last_sync: '2026-01-03T01:57:34.244120Z'
+  DIFF-043:
+    bmad_hash: 8bb43990fc0a
+    jira_key: ARGUS-593
+    last_sync: '2026-01-03T01:57:35.395964Z'
+  DIFF-044:
+    bmad_hash: 8de2c1b511f1
+    jira_key: ARGUS-594
+    last_sync: '2026-01-03T01:57:36.599262Z'
+  DIFF-045:
+    bmad_hash: 303b1db6795b
+    jira_key: ARGUS-595
+    last_sync: '2026-01-03T01:57:37.828076Z'
+  DIFF-046:
+    bmad_hash: d895fa80ba3d
+    jira_key: ARGUS-596
+    last_sync: '2026-01-03T01:57:39.158521Z'
+  DIFF-047:
+    bmad_hash: dab1bcdd07bc
+    jira_key: ARGUS-597
+    last_sync: '2026-01-03T01:57:40.388837Z'
+  DIFF-048:
+    bmad_hash: c1acab41dbe8
+    jira_key: ARGUS-598
+    last_sync: '2026-01-03T01:57:41.606143Z'
+  DIFF-049:
+    bmad_hash: 02384deb1185
+    jira_key: ARGUS-599
+    last_sync: '2026-01-03T01:57:42.771499Z'
+  DIFF-063:
+    bmad_hash: 70f9110330f8
+    jira_key: ARGUS-600
+    last_sync: '2026-01-03T01:57:44.074352Z'
+  DIFF-064:
+    bmad_hash: 2ea74bdc9325
+    jira_key: ARGUS-601
+    last_sync: '2026-01-03T01:57:45.304194Z'
+  DIFF-065:
+    bmad_hash: d194ebbfc66a
+    jira_key: ARGUS-602
+    last_sync: '2026-01-03T01:57:46.441950Z'
+  DIFF-066:
+    bmad_hash: fa9f8e0bcc6c
+    jira_key: ARGUS-603
+    last_sync: '2026-01-03T01:57:47.664525Z'
+  DIFF-067:
+    bmad_hash: cd2a7e276869
+    jira_key: ARGUS-604
+    last_sync: '2026-01-03T01:57:48.889571Z'
+  DIFF-068:
+    bmad_hash: 3ced6909a847
+    jira_key: ARGUS-605
+    last_sync: '2026-01-03T01:57:50.089949Z'
+  DIFF-069:
+    bmad_hash: c21fd10e54b7
+    jira_key: ARGUS-606
+    last_sync: '2026-01-03T01:57:51.409154Z'
+  DIFF-070:
+    bmad_hash: 9b2288adad75
+    jira_key: ARGUS-607
+    last_sync: '2026-01-03T01:57:52.608501Z'
+  DIFF-071:
+    bmad_hash: a0fc05f38c3b
+    jira_key: ARGUS-608
+    last_sync: '2026-01-03T01:57:53.797790Z'
+  DIFF-085:
+    bmad_hash: 4683e8adc4fe
+    jira_key: ARGUS-609
+    last_sync: '2026-01-03T01:57:54.964699Z'
+  DIFF-086:
+    bmad_hash: 0388f18e06a9
+    jira_key: ARGUS-610
+    last_sync: '2026-01-03T01:57:56.160321Z'
+  DIFF-087:
+    bmad_hash: 48f258994e55
+    jira_key: ARGUS-611
+    last_sync: '2026-01-03T01:57:57.386444Z'
+  DIFF-088:
+    bmad_hash: 2518a7eb2355
+    jira_key: ARGUS-612
+    last_sync: '2026-01-03T01:57:58.615383Z'
+  DIFF-101:
+    bmad_hash: 2443ca170639
+    jira_key: ARGUS-613
+    last_sync: '2026-01-03T01:57:59.847017Z'
+  DIFF-102:
+    bmad_hash: bfdf4154bf89
+    jira_key: ARGUS-614
+    last_sync: '2026-01-03T01:58:01.026008Z'
+  DIFF-119:
+    bmad_hash: e04b747a89ff
+    jira_key: ARGUS-615
+    last_sync: '2026-01-03T01:58:02.405892Z'
+  DIFF-120:
+    bmad_hash: 30de8b0b2314
+    jira_key: ARGUS-616
+    last_sync: '2026-01-03T01:58:03.736163Z'
+  DIFF-135:
+    bmad_hash: 62824a15d8d7
+    jira_key: ARGUS-617
+    last_sync: '2026-01-03T01:58:05.169995Z'
+  DIFF-136:
+    bmad_hash: 5d5703454655
+    jira_key: ARGUS-618
+    last_sync: '2026-01-03T01:58:06.377085Z'
+  DIFF-149:
+    bmad_hash: 6b7fbbbe6ec1
+    jira_key: ARGUS-619
+    last_sync: '2026-01-03T01:58:07.523009Z'
+  DIFF-150:
+    bmad_hash: 0efcc86333c1
+    jira_key: ARGUS-620
+    last_sync: '2026-01-03T01:58:08.858082Z'
+  EPIC-1:
+    bmad_hash: synced
+    jira_key: ARGUS-1
+    last_sync: '2026-01-03T01:34:17.869835Z'
+  EPIC-11:
+    bmad_hash: synced
+    jira_key: ARGUS-94
+    last_sync: '2026-01-03T01:34:17.869848Z'
+  EPIC-2:
+    bmad_hash: synced
+    jira_key: ARGUS-3
+    last_sync: '2026-01-03T01:34:17.869838Z'
+  EPIC-3:
+    bmad_hash: synced
+    jira_key: ARGUS-4
+    last_sync: '2026-01-03T01:34:17.869840Z'
+  EPIC-4:
+    bmad_hash: synced
+    jira_key: ARGUS-5
+    last_sync: '2026-01-03T01:34:17.869841Z'
+  EPIC-5:
+    bmad_hash: synced
+    jira_key: ARGUS-6
+    last_sync: '2026-01-03T01:34:17.869843Z'
+  EPIC-6:
+    bmad_hash: synced
+    jira_key: ARGUS-7
+    last_sync: '2026-01-03T01:34:17.869844Z'
+  EPIC-7:
+    bmad_hash: synced
+    jira_key: ARGUS-8
+    last_sync: '2026-01-03T01:34:17.869845Z'
+  EPIC-8:
+    bmad_hash: f9a4963e8f0b
+    jira_key: ARGUS-358
+    last_sync: '2026-01-03T01:40:25.153442Z'
+  EPIC-9:
+    bmad_hash: da37b3dd5040
+    jira_key: ARGUS-359
+    last_sync: '2026-01-03T01:40:43.551667Z'
+  EPIC-AUTH-001:
+    bmad_hash: synced
+    jira_key: ARGUS-11
+    last_sync: '2026-01-03T01:34:17.869849Z'
+  EXEC-001:
+    bmad_hash: a4aa450aabbb
+    jira_key: ARGUS-626
+    last_sync: '2026-01-03T01:58:16.572533Z'
+  EXEC-002:
+    bmad_hash: 3045a8c74fa1
+    jira_key: ARGUS-627
+    last_sync: '2026-01-03T01:58:17.811440Z'
+  EXEC-003:
+    bmad_hash: d3d19389b674
+    jira_key: ARGUS-628
+    last_sync: '2026-01-03T01:58:18.962958Z'
+  EXEC-004:
+    bmad_hash: 64925108f38e
+    jira_key: ARGUS-629
+    last_sync: '2026-01-03T01:58:20.326725Z'
+  EXEC-005:
+    bmad_hash: cea91067e146
+    jira_key: ARGUS-630
+    last_sync: '2026-01-03T01:58:21.754230Z'
+  EXEC-006:
+    bmad_hash: bc12aa59aca2
+    jira_key: ARGUS-631
+    last_sync: '2026-01-03T01:58:23.054168Z'
+  GRAPH-001:
+    bmad_hash: synced
+    jira_key: ARGUS-178
+    last_sync: '2026-01-03T01:34:17.870070Z'
+  GRAPH-002:
+    bmad_hash: synced
+    jira_key: ARGUS-179
+    last_sync: '2026-01-03T01:34:17.870071Z'
+  GRAPH-003:
+    bmad_hash: synced
+    jira_key: ARGUS-180
+    last_sync: '2026-01-03T01:34:17.870073Z'
+  GRAPH-004:
+    bmad_hash: synced
+    jira_key: ARGUS-181
+    last_sync: '2026-01-03T01:34:17.870074Z'
+  GRAPH-005:
+    bmad_hash: synced
+    jira_key: ARGUS-182
+    last_sync: '2026-01-03T01:34:17.870076Z'
+  GRAPH-006:
+    bmad_hash: synced
+    jira_key: ARGUS-183
+    last_sync: '2026-01-03T01:34:17.870077Z'
+  GRAPH-007:
+    bmad_hash: synced
+    jira_key: ARGUS-184
+    last_sync: '2026-01-03T01:34:17.870078Z'
+  GRAPH-008:
+    bmad_hash: synced
+    jira_key: ARGUS-185
+    last_sync: '2026-01-03T01:34:17.870080Z'
+  GRAPH-009:
+    bmad_hash: synced
+    jira_key: ARGUS-186
+    last_sync: '2026-01-03T01:34:17.870081Z'
+  GRAPH-010:
+    bmad_hash: synced
+    jira_key: ARGUS-187
+    last_sync: '2026-01-03T01:34:17.870082Z'
+  GRAPH-011:
+    bmad_hash: synced
+    jira_key: ARGUS-188
+    last_sync: '2026-01-03T01:34:17.870084Z'
+  GRAPH-012:
+    bmad_hash: synced
+    jira_key: ARGUS-189
+    last_sync: '2026-01-03T01:34:17.870085Z'
+  GRAPH-020:
+    bmad_hash: synced
+    jira_key: ARGUS-190
+    last_sync: '2026-01-03T01:34:17.870086Z'
+  GRAPH-021:
+    bmad_hash: synced
+    jira_key: ARGUS-191
+    last_sync: '2026-01-03T01:34:17.870087Z'
+  GRAPH-022:
+    bmad_hash: synced
+    jira_key: ARGUS-192
+    last_sync: '2026-01-03T01:34:17.870088Z'
+  GRAPH-023:
+    bmad_hash: synced
+    jira_key: ARGUS-193
+    last_sync: '2026-01-03T01:34:17.870090Z'
+  GRAPH-024:
+    bmad_hash: synced
+    jira_key: ARGUS-194
+    last_sync: '2026-01-03T01:34:17.870091Z'
+  GRAPH-025:
+    bmad_hash: synced
+    jira_key: ARGUS-195
+    last_sync: '2026-01-03T01:34:17.870093Z'
+  GRAPH-030:
+    bmad_hash: synced
+    jira_key: ARGUS-196
+    last_sync: '2026-01-03T01:34:17.870094Z'
+  GRAPH-031:
+    bmad_hash: synced
+    jira_key: ARGUS-197
+    last_sync: '2026-01-03T01:34:17.870095Z'
+  GRAPH-032:
+    bmad_hash: synced
+    jira_key: ARGUS-198
+    last_sync: '2026-01-03T01:34:17.870096Z'
+  GRAPH-033:
+    bmad_hash: synced
+    jira_key: ARGUS-199
+    last_sync: '2026-01-03T01:34:17.870097Z'
+  GRAPH-034:
+    bmad_hash: synced
+    jira_key: ARGUS-200
+    last_sync: '2026-01-03T01:34:17.870099Z'
+  GRAPH-035:
+    bmad_hash: synced
+    jira_key: ARGUS-201
+    last_sync: '2026-01-03T01:34:17.870100Z'
+  GRAPH-036:
+    bmad_hash: synced
+    jira_key: ARGUS-202
+    last_sync: '2026-01-03T01:34:17.870101Z'
+  GRAPH-037:
+    bmad_hash: synced
+    jira_key: ARGUS-203
+    last_sync: '2026-01-03T01:34:17.870102Z'
+  GRAPH-040:
+    bmad_hash: synced
+    jira_key: ARGUS-204
+    last_sync: '2026-01-03T01:34:17.870104Z'
+  GRAPH-041:
+    bmad_hash: synced
+    jira_key: ARGUS-205
+    last_sync: '2026-01-03T01:34:17.870105Z'
+  GRAPH-042:
+    bmad_hash: synced
+    jira_key: ARGUS-206
+    last_sync: '2026-01-03T01:34:17.870106Z'
+  GRAPH-043:
+    bmad_hash: synced
+    jira_key: ARGUS-207
+    last_sync: '2026-01-03T01:34:17.870107Z'
+  GRAPH-044:
+    bmad_hash: synced
+    jira_key: ARGUS-208
+    last_sync: '2026-01-03T01:34:17.870108Z'
+  GRAPH-045:
+    bmad_hash: synced
+    jira_key: ARGUS-209
+    last_sync: '2026-01-03T01:34:17.870110Z'
+  GRAPH-046:
+    bmad_hash: synced
+    jira_key: ARGUS-210
+    last_sync: '2026-01-03T01:34:17.870111Z'
+  GRAPH-047:
+    bmad_hash: synced
+    jira_key: ARGUS-211
+    last_sync: '2026-01-03T01:34:17.870112Z'
+  GRAPH-050:
+    bmad_hash: synced
+    jira_key: ARGUS-212
+    last_sync: '2026-01-03T01:34:17.870113Z'
+  GRAPH-051:
+    bmad_hash: synced
+    jira_key: ARGUS-213
+    last_sync: '2026-01-03T01:34:17.870114Z'
+  GRAPH-052:
+    bmad_hash: synced
+    jira_key: ARGUS-214
+    last_sync: '2026-01-03T01:34:17.870115Z'
+  GRAPH-053:
+    bmad_hash: synced
+    jira_key: ARGUS-215
+    last_sync: '2026-01-03T01:34:17.870117Z'
+  GRAPH-054:
+    bmad_hash: synced
+    jira_key: ARGUS-216
+    last_sync: '2026-01-03T01:34:17.870118Z'
+  GRAPH-055:
+    bmad_hash: synced
+    jira_key: ARGUS-217
+    last_sync: '2026-01-03T01:34:17.870119Z'
+  GRAPH-056:
+    bmad_hash: synced
+    jira_key: ARGUS-218
+    last_sync: '2026-01-03T01:34:17.870120Z'
+  GRAPH-057:
+    bmad_hash: synced
+    jira_key: ARGUS-219
+    last_sync: '2026-01-03T01:34:17.870122Z'
+  GRAPH-058:
+    bmad_hash: synced
+    jira_key: ARGUS-220
+    last_sync: '2026-01-03T01:34:17.870123Z'
+  GRAPH-059:
+    bmad_hash: synced
+    jira_key: ARGUS-221
+    last_sync: '2026-01-03T01:34:17.870124Z'
+  GRAPH-060:
+    bmad_hash: synced
+    jira_key: ARGUS-222
+    last_sync: '2026-01-03T01:34:17.870125Z'
+  GRAPH-070:
+    bmad_hash: synced
+    jira_key: ARGUS-223
+    last_sync: '2026-01-03T01:34:17.870126Z'
+  GRAPH-071:
+    bmad_hash: synced
+    jira_key: ARGUS-224
+    last_sync: '2026-01-03T01:34:17.870127Z'
+  GRAPH-072:
+    bmad_hash: synced
+    jira_key: ARGUS-225
+    last_sync: '2026-01-03T01:34:17.870129Z'
+  GRAPH-073:
+    bmad_hash: synced
+    jira_key: ARGUS-226
+    last_sync: '2026-01-03T01:34:17.870130Z'
+  GRAPH-074:
+    bmad_hash: synced
+    jira_key: ARGUS-227
+    last_sync: '2026-01-03T01:34:17.870131Z'
+  GRAPH-075:
+    bmad_hash: synced
+    jira_key: ARGUS-228
+    last_sync: '2026-01-03T01:34:17.870133Z'
+  GRAPH-080:
+    bmad_hash: synced
+    jira_key: ARGUS-229
+    last_sync: '2026-01-03T01:34:17.870134Z'
+  GRAPH-081:
+    bmad_hash: synced
+    jira_key: ARGUS-230
+    last_sync: '2026-01-03T01:34:17.870136Z'
+  GRAPH-082:
+    bmad_hash: synced
+    jira_key: ARGUS-231
+    last_sync: '2026-01-03T01:34:17.870137Z'
+  GRAPH-100:
+    bmad_hash: synced
+    jira_key: ARGUS-232
+    last_sync: '2026-01-03T01:34:17.870139Z'
+  GRAPH-101:
+    bmad_hash: synced
+    jira_key: ARGUS-233
+    last_sync: '2026-01-03T01:34:17.870140Z'
+  GRAPH-102:
+    bmad_hash: synced
+    jira_key: ARGUS-234
+    last_sync: '2026-01-03T01:34:17.870142Z'
+  GRAPH-103:
+    bmad_hash: synced
+    jira_key: ARGUS-235
+    last_sync: '2026-01-03T01:34:17.870143Z'
+  GRAPH-104:
+    bmad_hash: synced
+    jira_key: ARGUS-236
+    last_sync: '2026-01-03T01:34:17.870145Z'
+  GRAPH-105:
+    bmad_hash: synced
+    jira_key: ARGUS-237
+    last_sync: '2026-01-03T01:34:17.870146Z'
+  GRAPH-106:
+    bmad_hash: synced
+    jira_key: ARGUS-238
+    last_sync: '2026-01-03T01:34:17.870148Z'
+  GRAPH-110:
+    bmad_hash: synced
+    jira_key: ARGUS-239
+    last_sync: '2026-01-03T01:34:17.870149Z'
+  GRAPH-111:
+    bmad_hash: synced
+    jira_key: ARGUS-240
+    last_sync: '2026-01-03T01:34:17.870151Z'
+  GRAPH-112:
+    bmad_hash: synced
+    jira_key: ARGUS-241
+    last_sync: '2026-01-03T01:34:17.870152Z'
+  GRAPH-113:
+    bmad_hash: synced
+    jira_key: ARGUS-242
+    last_sync: '2026-01-03T01:34:17.870153Z'
+  GRAPH-114:
+    bmad_hash: synced
+    jira_key: ARGUS-243
+    last_sync: '2026-01-03T01:34:17.870154Z'
+  GRAPH-120:
+    bmad_hash: synced
+    jira_key: ARGUS-244
+    last_sync: '2026-01-03T01:34:17.870155Z'
+  GRAPH-121:
+    bmad_hash: synced
+    jira_key: ARGUS-245
+    last_sync: '2026-01-03T01:34:17.870157Z'
+  GRAPH-122:
+    bmad_hash: synced
+    jira_key: ARGUS-246
+    last_sync: '2026-01-03T01:34:17.870158Z'
+  GRAPH-123:
+    bmad_hash: synced
+    jira_key: ARGUS-247
+    last_sync: '2026-01-03T01:34:17.870159Z'
+  GRAPH-130:
+    bmad_hash: synced
+    jira_key: ARGUS-248
+    last_sync: '2026-01-03T01:34:17.870160Z'
+  GRAPH-131:
+    bmad_hash: synced
+    jira_key: ARGUS-249
+    last_sync: '2026-01-03T01:34:17.870162Z'
+  GRAPH-132:
+    bmad_hash: synced
+    jira_key: ARGUS-250
+    last_sync: '2026-01-03T01:34:17.870163Z'
+  GRAPH-133:
+    bmad_hash: synced
+    jira_key: ARGUS-251
+    last_sync: '2026-01-03T01:34:17.870164Z'
+  INT-001:
+    bmad_hash: synced
+    jira_key: ARGUS-34
+    last_sync: '2026-01-03T01:34:17.869876Z'
+  INT-002:
+    bmad_hash: synced
+    jira_key: ARGUS-35
+    last_sync: '2026-01-03T01:34:17.869880Z'
+  INT-003:
+    bmad_hash: synced
+    jira_key: ARGUS-36
+    last_sync: '2026-01-03T01:34:17.869882Z'
+  INT-004:
+    bmad_hash: synced
+    jira_key: ARGUS-37
+    last_sync: '2026-01-03T01:34:17.869883Z'
+  INT-005:
+    bmad_hash: synced
+    jira_key: ARGUS-38
+    last_sync: '2026-01-03T01:34:17.869885Z'
+  INT-006:
+    bmad_hash: synced
+    jira_key: ARGUS-39
+    last_sync: '2026-01-03T01:34:17.869886Z'
+  INT-007:
+    bmad_hash: synced
+    jira_key: ARGUS-40
+    last_sync: '2026-01-03T01:34:17.869888Z'
+  INT-008:
+    bmad_hash: synced
+    jira_key: ARGUS-41
+    last_sync: '2026-01-03T01:34:17.869889Z'
+  INT-009:
+    bmad_hash: synced
+    jira_key: ARGUS-50
+    last_sync: '2026-01-03T01:34:17.869890Z'
+  INT-010:
+    bmad_hash: synced
+    jira_key: ARGUS-51
+    last_sync: '2026-01-03T01:34:17.869891Z'
+  INT-011:
+    bmad_hash: synced
+    jira_key: ARGUS-52
+    last_sync: '2026-01-03T01:34:17.869893Z'
+  INT-012:
+    bmad_hash: synced
+    jira_key: ARGUS-53
+    last_sync: '2026-01-03T01:34:17.869894Z'
+  INT-013:
+    bmad_hash: synced
+    jira_key: ARGUS-54
+    last_sync: '2026-01-03T01:34:17.869897Z'
+  INT-014:
+    bmad_hash: synced
+    jira_key: ARGUS-55
+    last_sync: '2026-01-03T01:34:17.869898Z'
+  INT-015:
+    bmad_hash: synced
+    jira_key: ARGUS-56
+    last_sync: '2026-01-03T01:34:17.869901Z'
+  INT-016:
+    bmad_hash: synced
+    jira_key: ARGUS-57
+    last_sync: '2026-01-03T01:34:17.869902Z'
+  INT-020:
+    bmad_hash: synced
+    jira_key: ARGUS-58
+    last_sync: '2026-01-03T01:34:17.869903Z'
+  INT-021:
+    bmad_hash: synced
+    jira_key: ARGUS-59
+    last_sync: '2026-01-03T01:34:17.869905Z'
+  INT-022:
+    bmad_hash: synced
+    jira_key: ARGUS-60
+    last_sync: '2026-01-03T01:34:17.869906Z'
+  INT-023:
+    bmad_hash: synced
+    jira_key: ARGUS-61
+    last_sync: '2026-01-03T01:34:17.869908Z'
+  INT-024:
+    bmad_hash: synced
+    jira_key: ARGUS-62
+    last_sync: '2026-01-03T01:34:17.869909Z'
+  INT-025:
+    bmad_hash: synced
+    jira_key: ARGUS-63
+    last_sync: '2026-01-03T01:34:17.869910Z'
+  INT-026:
+    bmad_hash: synced
+    jira_key: ARGUS-64
+    last_sync: '2026-01-03T01:34:17.869912Z'
+  INT-027:
+    bmad_hash: synced
+    jira_key: ARGUS-65
+    last_sync: '2026-01-03T01:34:17.869913Z'
+  INT-028:
+    bmad_hash: synced
+    jira_key: ARGUS-66
+    last_sync: '2026-01-03T01:34:17.869914Z'
+  INT-029:
+    bmad_hash: synced
+    jira_key: ARGUS-67
+    last_sync: '2026-01-03T01:34:17.869915Z'
+  INT-030:
+    bmad_hash: synced
+    jira_key: ARGUS-68
+    last_sync: '2026-01-03T01:34:17.869917Z'
+  INT-031:
+    bmad_hash: synced
+    jira_key: ARGUS-69
+    last_sync: '2026-01-03T01:34:17.869918Z'
+  INT-032:
+    bmad_hash: synced
+    jira_key: ARGUS-70
+    last_sync: '2026-01-03T01:34:17.869919Z'
+  INT-033:
+    bmad_hash: synced
+    jira_key: ARGUS-71
+    last_sync: '2026-01-03T01:34:17.869920Z'
+  INT-034:
+    bmad_hash: synced
+    jira_key: ARGUS-72
+    last_sync: '2026-01-03T01:34:17.869923Z'
+  INT-035:
+    bmad_hash: synced
+    jira_key: ARGUS-73
+    last_sync: '2026-01-03T01:34:17.869924Z'
+  INT-036:
+    bmad_hash: synced
+    jira_key: ARGUS-74
+    last_sync: '2026-01-03T01:34:17.869925Z'
+  INT-040:
+    bmad_hash: synced
+    jira_key: ARGUS-75
+    last_sync: '2026-01-03T01:34:17.869927Z'
+  INT-041:
+    bmad_hash: synced
+    jira_key: ARGUS-76
+    last_sync: '2026-01-03T01:34:17.869929Z'
+  INT-042:
+    bmad_hash: synced
+    jira_key: ARGUS-77
+    last_sync: '2026-01-03T01:34:17.869930Z'
+  INT-043:
+    bmad_hash: synced
+    jira_key: ARGUS-78
+    last_sync: '2026-01-03T01:34:17.869932Z'
+  INT-044:
+    bmad_hash: synced
+    jira_key: ARGUS-79
+    last_sync: '2026-01-03T01:34:17.869933Z'
+  INT-045:
+    bmad_hash: synced
+    jira_key: ARGUS-80
+    last_sync: '2026-01-03T01:34:17.869934Z'
+  INT-046:
+    bmad_hash: synced
+    jira_key: ARGUS-81
+    last_sync: '2026-01-03T01:34:17.869935Z'
+  INT-047:
+    bmad_hash: synced
+    jira_key: ARGUS-82
+    last_sync: '2026-01-03T01:34:17.869937Z'
+  INT-048:
+    bmad_hash: synced
+    jira_key: ARGUS-83
+    last_sync: '2026-01-03T01:34:17.869938Z'
+  INT-050:
+    bmad_hash: synced
+    jira_key: ARGUS-84
+    last_sync: '2026-01-03T01:34:17.869939Z'
+  INT-051:
+    bmad_hash: synced
+    jira_key: ARGUS-85
+    last_sync: '2026-01-03T01:34:17.869940Z'
+  INT-052:
+    bmad_hash: synced
+    jira_key: ARGUS-86
+    last_sync: '2026-01-03T01:34:17.869941Z'
+  INT-053:
+    bmad_hash: synced
+    jira_key: ARGUS-87
+    last_sync: '2026-01-03T01:34:17.869943Z'
+  INT-054:
+    bmad_hash: synced
+    jira_key: ARGUS-88
+    last_sync: '2026-01-03T01:34:17.869944Z'
+  INT-055:
+    bmad_hash: synced
+    jira_key: ARGUS-89
+    last_sync: '2026-01-03T01:34:17.869945Z'
+  INT-056:
+    bmad_hash: synced
+    jira_key: ARGUS-90
+    last_sync: '2026-01-03T01:34:17.869947Z'
+  INT-100:
+    bmad_hash: synced
+    jira_key: ARGUS-91
+    last_sync: '2026-01-03T01:34:17.869948Z'
+  INT-101:
+    bmad_hash: 3e118c585526
+    jira_key: ARGUS-546
+    last_sync: '2026-01-03T01:56:35.259502Z'
+  INT-102:
+    bmad_hash: b3a209aa9b6a
+    jira_key: ARGUS-547
+    last_sync: '2026-01-03T01:56:36.431767Z'
+  INT-103:
+    bmad_hash: 27228af726b4
+    jira_key: ARGUS-548
+    last_sync: '2026-01-03T01:56:37.748147Z'
+  INT-110:
+    bmad_hash: 36cc38576cd0
+    jira_key: ARGUS-549
+    last_sync: '2026-01-03T01:56:39.001006Z'
+  INT-111:
+    bmad_hash: f55602420aec
+    jira_key: ARGUS-550
+    last_sync: '2026-01-03T01:56:40.200690Z'
+  INT-112:
+    bmad_hash: 32a6f825ad2c
+    jira_key: ARGUS-551
+    last_sync: '2026-01-03T01:56:41.521860Z'
+  INT-120:
+    bmad_hash: 10a1a149cb97
+    jira_key: ARGUS-552
+    last_sync: '2026-01-03T01:56:42.651146Z'
+  INT-121:
+    bmad_hash: fbf83ff7a25e
+    jira_key: ARGUS-553
+    last_sync: '2026-01-03T01:56:43.964781Z'
+  INT-122:
+    bmad_hash: 11c6d22c75ed
+    jira_key: ARGUS-554
+    last_sync: '2026-01-03T01:56:45.183838Z'
+  INT-130:
+    bmad_hash: 29768b7eb23a
+    jira_key: ARGUS-555
+    last_sync: '2026-01-03T01:56:46.424596Z'
+  INT-131:
+    bmad_hash: f7d4ac26c6b2
+    jira_key: ARGUS-556
+    last_sync: '2026-01-03T01:56:47.693566Z'
+  INT-132:
+    bmad_hash: 2f0a31178fb2
+    jira_key: ARGUS-557
+    last_sync: '2026-01-03T01:56:48.828220Z'
+  INT-140:
+    bmad_hash: c1760048f604
+    jira_key: ARGUS-558
+    last_sync: '2026-01-03T01:56:50.009284Z'
+  INT-141:
+    bmad_hash: c04d23a8f187
+    jira_key: ARGUS-559
+    last_sync: '2026-01-03T01:56:51.237118Z'
+  INT-142:
+    bmad_hash: 6be47be9406f
+    jira_key: ARGUS-560
+    last_sync: '2026-01-03T01:56:52.493194Z'
+  PLAT-001:
+    bmad_hash: synced
+    jira_key: ARGUS-2
+    last_sync: '2026-01-03T01:34:17.869855Z'
+  PLAT-002:
+    bmad_hash: synced
+    jira_key: ARGUS-96
+    last_sync: '2026-01-03T01:34:17.869950Z'
+  PLAT-003:
+    bmad_hash: synced
+    jira_key: ARGUS-97
+    last_sync: '2026-01-03T01:34:17.869951Z'
+  PLAT-004:
+    bmad_hash: synced
+    jira_key: ARGUS-98
+    last_sync: '2026-01-03T01:34:17.869952Z'
+  PLAT-005:
+    bmad_hash: synced
+    jira_key: ARGUS-99
+    last_sync: '2026-01-03T01:34:17.869953Z'
+  PLAT-006:
+    bmad_hash: synced
+    jira_key: ARGUS-100
+    last_sync: '2026-01-03T01:34:17.869955Z'
+  PLAT-007:
+    bmad_hash: synced
+    jira_key: ARGUS-101
+    last_sync: '2026-01-03T01:34:17.869956Z'
+  PLAT-008:
+    bmad_hash: synced
+    jira_key: ARGUS-102
+    last_sync: '2026-01-03T01:34:17.869957Z'
+  PLAT-009:
+    bmad_hash: synced
+    jira_key: ARGUS-103
+    last_sync: '2026-01-03T01:34:17.869959Z'
+  PLAT-010:
+    bmad_hash: synced
+    jira_key: ARGUS-104
+    last_sync: '2026-01-03T01:34:17.869960Z'
+  PLAT-011:
+    bmad_hash: synced
+    jira_key: ARGUS-105
+    last_sync: '2026-01-03T01:34:17.869961Z'
+  PLAT-012:
+    bmad_hash: synced
+    jira_key: ARGUS-106
+    last_sync: '2026-01-03T01:34:17.869962Z'
+  PLAT-020:
+    bmad_hash: synced
+    jira_key: ARGUS-107
+    last_sync: '2026-01-03T01:34:17.869964Z'
+  PLAT-021:
+    bmad_hash: synced
+    jira_key: ARGUS-108
+    last_sync: '2026-01-03T01:34:17.869966Z'
+  PLAT-022:
+    bmad_hash: synced
+    jira_key: ARGUS-109
+    last_sync: '2026-01-03T01:34:17.869967Z'
+  PLAT-023:
+    bmad_hash: synced
+    jira_key: ARGUS-110
+    last_sync: '2026-01-03T01:34:17.869968Z'
+  PLAT-024:
+    bmad_hash: synced
+    jira_key: ARGUS-111
+    last_sync: '2026-01-03T01:34:17.869969Z'
+  PLAT-025:
+    bmad_hash: synced
+    jira_key: ARGUS-112
+    last_sync: '2026-01-03T01:34:17.869970Z'
+  PLAT-026:
+    bmad_hash: synced
+    jira_key: ARGUS-113
+    last_sync: '2026-01-03T01:34:17.869972Z'
+  PLAT-027:
+    bmad_hash: synced
+    jira_key: ARGUS-114
+    last_sync: '2026-01-03T01:34:17.869973Z'
+  PLAT-028:
+    bmad_hash: synced
+    jira_key: ARGUS-115
+    last_sync: '2026-01-03T01:34:17.869974Z'
+  PLAT-029:
+    bmad_hash: synced
+    jira_key: ARGUS-116
+    last_sync: '2026-01-03T01:34:17.869975Z'
+  PLAT-030:
+    bmad_hash: synced
+    jira_key: ARGUS-117
+    last_sync: '2026-01-03T01:34:17.869976Z'
+  PLAT-031:
+    bmad_hash: synced
+    jira_key: ARGUS-118
+    last_sync: '2026-01-03T01:34:17.869978Z'
+  PLAT-032:
+    bmad_hash: synced
+    jira_key: ARGUS-119
+    last_sync: '2026-01-03T01:34:17.869979Z'
+  PLAT-033:
+    bmad_hash: synced
+    jira_key: ARGUS-120
+    last_sync: '2026-01-03T01:34:17.869980Z'
+  PLAT-034:
+    bmad_hash: synced
+    jira_key: ARGUS-121
+    last_sync: '2026-01-03T01:34:17.869981Z'
+  PLAT-035:
+    bmad_hash: synced
+    jira_key: ARGUS-122
+    last_sync: '2026-01-03T01:34:17.869983Z'
+  PLAT-036:
+    bmad_hash: synced
+    jira_key: ARGUS-123
+    last_sync: '2026-01-03T01:34:17.869984Z'
+  PLAT-040:
+    bmad_hash: synced
+    jira_key: ARGUS-124
+    last_sync: '2026-01-03T01:34:17.869986Z'
+  PLAT-041:
+    bmad_hash: synced
+    jira_key: ARGUS-125
+    last_sync: '2026-01-03T01:34:17.869987Z'
+  PLAT-042:
+    bmad_hash: synced
+    jira_key: ARGUS-126
+    last_sync: '2026-01-03T01:34:17.869988Z'
+  PLAT-043:
+    bmad_hash: synced
+    jira_key: ARGUS-127
+    last_sync: '2026-01-03T01:34:17.869990Z'
+  PLAT-044:
+    bmad_hash: synced
+    jira_key: ARGUS-128
+    last_sync: '2026-01-03T01:34:17.869991Z'
+  PLAT-045:
+    bmad_hash: synced
+    jira_key: ARGUS-129
+    last_sync: '2026-01-03T01:34:17.869993Z'
+  PLAT-046:
+    bmad_hash: synced
+    jira_key: ARGUS-130
+    last_sync: '2026-01-03T01:34:17.869994Z'
+  PLAT-047:
+    bmad_hash: synced
+    jira_key: ARGUS-131
+    last_sync: '2026-01-03T01:34:17.869995Z'
+  PLAT-048:
+    bmad_hash: synced
+    jira_key: ARGUS-132
+    last_sync: '2026-01-03T01:34:17.869997Z'
+  PLAT-049:
+    bmad_hash: synced
+    jira_key: ARGUS-133
+    last_sync: '2026-01-03T01:34:17.869999Z'
+  PLAT-050:
+    bmad_hash: synced
+    jira_key: ARGUS-134
+    last_sync: '2026-01-03T01:34:17.870000Z'
+  PLAT-051:
+    bmad_hash: synced
+    jira_key: ARGUS-135
+    last_sync: '2026-01-03T01:34:17.870002Z'
+  PLAT-052:
+    bmad_hash: synced
+    jira_key: ARGUS-136
+    last_sync: '2026-01-03T01:34:17.870004Z'
+  PLAT-053:
+    bmad_hash: synced
+    jira_key: ARGUS-137
+    last_sync: '2026-01-03T01:34:17.870005Z'
+  PLAT-054:
+    bmad_hash: synced
+    jira_key: ARGUS-138
+    last_sync: '2026-01-03T01:34:17.870007Z'
+  PLAT-055:
+    bmad_hash: synced
+    jira_key: ARGUS-139
+    last_sync: '2026-01-03T01:34:17.870008Z'
+  PLAT-060:
+    bmad_hash: synced
+    jira_key: ARGUS-140
+    last_sync: '2026-01-03T01:34:17.870010Z'
+  PLAT-061:
+    bmad_hash: synced
+    jira_key: ARGUS-141
+    last_sync: '2026-01-03T01:34:17.870011Z'
+  PLAT-062:
+    bmad_hash: synced
+    jira_key: ARGUS-142
+    last_sync: '2026-01-03T01:34:17.870013Z'
+  PLAT-063:
+    bmad_hash: synced
+    jira_key: ARGUS-143
+    last_sync: '2026-01-03T01:34:17.870015Z'
+  PLAT-064:
+    bmad_hash: synced
+    jira_key: ARGUS-144
+    last_sync: '2026-01-03T01:34:17.870016Z'
+  PLAT-065:
+    bmad_hash: synced
+    jira_key: ARGUS-145
+    last_sync: '2026-01-03T01:34:17.870018Z'
+  PLAT-066:
+    bmad_hash: synced
+    jira_key: ARGUS-146
+    last_sync: '2026-01-03T01:34:17.870020Z'
+  PLAT-067:
+    bmad_hash: synced
+    jira_key: ARGUS-147
+    last_sync: '2026-01-03T01:34:17.870021Z'
+  PLAT-068:
+    bmad_hash: synced
+    jira_key: ARGUS-148
+    last_sync: '2026-01-03T01:34:17.870023Z'
+  PLAT-069:
+    bmad_hash: synced
+    jira_key: ARGUS-149
+    last_sync: '2026-01-03T01:34:17.870024Z'
+  PLAT-070:
+    bmad_hash: synced
+    jira_key: ARGUS-150
+    last_sync: '2026-01-03T01:34:17.870026Z'
+  PLAT-071:
+    bmad_hash: synced
+    jira_key: ARGUS-151
+    last_sync: '2026-01-03T01:34:17.870028Z'
+  PLAT-080:
+    bmad_hash: synced
+    jira_key: ARGUS-152
+    last_sync: '2026-01-03T01:34:17.870029Z'
+  PLAT-081:
+    bmad_hash: synced
+    jira_key: ARGUS-153
+    last_sync: '2026-01-03T01:34:17.870031Z'
+  PLAT-082:
+    bmad_hash: synced
+    jira_key: ARGUS-154
+    last_sync: '2026-01-03T01:34:17.870032Z'
+  PLAT-083:
+    bmad_hash: synced
+    jira_key: ARGUS-155
+    last_sync: '2026-01-03T01:34:17.870034Z'
+  PLAT-084:
+    bmad_hash: synced
+    jira_key: ARGUS-156
+    last_sync: '2026-01-03T01:34:17.870035Z'
+  PLAT-085:
+    bmad_hash: synced
+    jira_key: ARGUS-157
+    last_sync: '2026-01-03T01:34:17.870037Z'
+  PLAT-086:
+    bmad_hash: synced
+    jira_key: ARGUS-158
+    last_sync: '2026-01-03T01:34:17.870039Z'
+  PLAT-087:
+    bmad_hash: synced
+    jira_key: ARGUS-159
+    last_sync: '2026-01-03T01:34:17.870040Z'
+  PLAT-088:
+    bmad_hash: synced
+    jira_key: ARGUS-160
+    last_sync: '2026-01-03T01:34:17.870042Z'
+  PLAT-090:
+    bmad_hash: synced
+    jira_key: ARGUS-161
+    last_sync: '2026-01-03T01:34:17.870043Z'
+  PLAT-091:
+    bmad_hash: synced
+    jira_key: ARGUS-162
+    last_sync: '2026-01-03T01:34:17.870045Z'
+  PLAT-092:
+    bmad_hash: synced
+    jira_key: ARGUS-163
+    last_sync: '2026-01-03T01:34:17.870047Z'
+  PLAT-093:
+    bmad_hash: synced
+    jira_key: ARGUS-164
+    last_sync: '2026-01-03T01:34:17.870048Z'
+  PLAT-094:
+    bmad_hash: synced
+    jira_key: ARGUS-165
+    last_sync: '2026-01-03T01:34:17.870050Z'
+  PLAT-095:
+    bmad_hash: synced
+    jira_key: ARGUS-166
+    last_sync: '2026-01-03T01:34:17.870051Z'
+  PLAT-096:
+    bmad_hash: synced
+    jira_key: ARGUS-167
+    last_sync: '2026-01-03T01:34:17.870052Z'
+  PLAT-097:
+    bmad_hash: synced
+    jira_key: ARGUS-168
+    last_sync: '2026-01-03T01:34:17.870054Z'
+  PLAT-100:
+    bmad_hash: synced
+    jira_key: ARGUS-169
+    last_sync: '2026-01-03T01:34:17.870055Z'
+  PLAT-101:
+    bmad_hash: synced
+    jira_key: ARGUS-170
+    last_sync: '2026-01-03T01:34:17.870056Z'
+  PLAT-102:
+    bmad_hash: synced
+    jira_key: ARGUS-171
+    last_sync: '2026-01-03T01:34:17.870058Z'
+  PLAT-103:
+    bmad_hash: synced
+    jira_key: ARGUS-172
+    last_sync: '2026-01-03T01:34:17.870059Z'
+  PLAT-104:
+    bmad_hash: synced
+    jira_key: ARGUS-173
+    last_sync: '2026-01-03T01:34:17.870060Z'
+  PLAT-105:
+    bmad_hash: synced
+    jira_key: ARGUS-174
+    last_sync: '2026-01-03T01:34:17.870064Z'
+  PLAT-106:
+    bmad_hash: synced
+    jira_key: ARGUS-175
+    last_sync: '2026-01-03T01:34:17.870066Z'
+  PLAT-107:
+    bmad_hash: synced
+    jira_key: ARGUS-176
+    last_sync: '2026-01-03T01:34:17.870067Z'
+  PLAT-108:
+    bmad_hash: synced
+    jira_key: ARGUS-177
+    last_sync: '2026-01-03T01:34:17.870069Z'
+  PLAT-200:
+    bmad_hash: 44ccb7a1be17
+    jira_key: ARGUS-360
+    last_sync: '2026-01-03T01:51:07.248309Z'
+  PLAT-201:
+    bmad_hash: 0d32eb402f78
+    jira_key: ARGUS-361
+    last_sync: '2026-01-03T01:51:08.497849Z'
+  PLAT-202:
+    bmad_hash: ee36eb5e844f
+    jira_key: ARGUS-362
+    last_sync: '2026-01-03T01:51:09.679809Z'
+  PLAT-203:
+    bmad_hash: eb6a7ef76bf8
+    jira_key: ARGUS-363
+    last_sync: '2026-01-03T01:51:10.958613Z'
+  PLAT-204:
+    bmad_hash: ed6852bfeb01
+    jira_key: ARGUS-364
+    last_sync: '2026-01-03T01:51:12.032022Z'
+  PLAT-205:
+    bmad_hash: a7f2662495dc
+    jira_key: ARGUS-365
+    last_sync: '2026-01-03T01:51:13.310483Z'
+  PLAT-206:
+    bmad_hash: b8ea18593a30
+    jira_key: ARGUS-366
+    last_sync: '2026-01-03T01:51:14.490729Z'
+  PLAT-207:
+    bmad_hash: 821dcc6cadcd
+    jira_key: ARGUS-367
+    last_sync: '2026-01-03T01:51:15.664747Z'
+  PLAT-208:
+    bmad_hash: e2baf85391aa
+    jira_key: ARGUS-368
+    last_sync: '2026-01-03T01:51:16.926130Z'
+  PLAT-209:
+    bmad_hash: 60d00d1b1cd8
+    jira_key: ARGUS-369
+    last_sync: '2026-01-03T01:51:18.096158Z'
+  PLAT-210:
+    bmad_hash: 83fc9ce94579
+    jira_key: ARGUS-370
+    last_sync: '2026-01-03T01:51:19.354671Z'
+  PLAT-220:
+    bmad_hash: da76c53871e0
+    jira_key: ARGUS-371
+    last_sync: '2026-01-03T01:51:20.570479Z'
+  PLAT-221:
+    bmad_hash: 7b31d74879e5
+    jira_key: ARGUS-372
+    last_sync: '2026-01-03T01:51:21.719537Z'
+  PLAT-222:
+    bmad_hash: be12a8af2d9f
+    jira_key: ARGUS-373
+    last_sync: '2026-01-03T01:51:22.935017Z'
+  PLAT-223:
+    bmad_hash: 8bd49d04a360
+    jira_key: ARGUS-374
+    last_sync: '2026-01-03T01:51:24.267313Z'
+  PLAT-224:
+    bmad_hash: e1164b6dbea9
+    jira_key: ARGUS-375
+    last_sync: '2026-01-03T01:51:25.499969Z'
+  PLAT-225:
+    bmad_hash: 29505178079e
+    jira_key: ARGUS-376
+    last_sync: '2026-01-03T01:51:26.828342Z'
+  PLAT-230:
+    bmad_hash: 58adc3e6aa8c
+    jira_key: ARGUS-377
+    last_sync: '2026-01-03T01:51:28.159465Z'
+  PLAT-231:
+    bmad_hash: 8ddd35aa87aa
+    jira_key: ARGUS-378
+    last_sync: '2026-01-03T01:51:29.287529Z'
+  PLAT-232:
+    bmad_hash: 86400b7197dc
+    jira_key: ARGUS-379
+    last_sync: '2026-01-03T01:51:30.516407Z'
+  PLAT-233:
+    bmad_hash: f572f812fee9
+    jira_key: ARGUS-380
+    last_sync: '2026-01-03T01:51:31.714713Z'
+  PLAT-234:
+    bmad_hash: 79b6a54f30c0
+    jira_key: ARGUS-381
+    last_sync: '2026-01-03T01:51:33.045648Z'
+  PLAT-240:
+    bmad_hash: 399564f2e3bc
+    jira_key: ARGUS-382
+    last_sync: '2026-01-03T01:51:34.200685Z'
+  PLAT-241:
+    bmad_hash: ed52c1c55efc
+    jira_key: ARGUS-383
+    last_sync: '2026-01-03T01:51:35.429908Z'
+  PLAT-242:
+    bmad_hash: db592c3f4775
+    jira_key: ARGUS-384
+    last_sync: '2026-01-03T01:51:36.615889Z'
+  PLAT-243:
+    bmad_hash: 56e704201298
+    jira_key: ARGUS-385
+    last_sync: '2026-01-03T01:51:37.834558Z'
+  PLAT-244:
+    bmad_hash: cad1ee478286
+    jira_key: ARGUS-386
+    last_sync: '2026-01-03T01:51:39.323370Z'
+  PLAT-245:
+    bmad_hash: 33306900fd8a
+    jira_key: ARGUS-387
+    last_sync: '2026-01-03T01:51:40.593637Z'
+  PLAT-246:
+    bmad_hash: 1a93dd2e6c8e
+    jira_key: ARGUS-388
+    last_sync: '2026-01-03T01:51:41.911769Z'
+  PLAT-247:
+    bmad_hash: 2aa92cd42f42
+    jira_key: ARGUS-389
+    last_sync: '2026-01-03T01:51:42.971917Z'
+  PLAT-248:
+    bmad_hash: '287869567056'
+    jira_key: ARGUS-390
+    last_sync: '2026-01-03T01:51:44.338442Z'
+  POLICY-001:
+    bmad_hash: e507cee68c06
+    jira_key: ARGUS-632
+    last_sync: '2026-01-03T01:58:29.308989Z'
+  POLICY-002:
+    bmad_hash: 23387df4c028
+    jira_key: ARGUS-633
+    last_sync: '2026-01-03T01:58:30.668956Z'
+  POLICY-003:
+    bmad_hash: 5de69fd3e3a7
+    jira_key: ARGUS-634
+    last_sync: '2026-01-03T01:58:31.927412Z'
+  POLICY-004:
+    bmad_hash: 300647a721ee
+    jira_key: ARGUS-635
+    last_sync: '2026-01-03T01:58:33.127992Z'
+  POLICY-005:
+    bmad_hash: dbc514f27d1e
+    jira_key: ARGUS-636
+    last_sync: '2026-01-03T01:58:34.476304Z'
+  POLICY-006:
+    bmad_hash: d5bb1f5dc847
+    jira_key: ARGUS-637
+    last_sync: '2026-01-03T01:58:35.786984Z'
+  POLICY-007:
+    bmad_hash: c58c46d4d970
+    jira_key: ARGUS-638
+    last_sync: '2026-01-03T01:58:36.978887Z'
+  POLICY-008:
+    bmad_hash: fbda2f92c0a3
+    jira_key: ARGUS-639
+    last_sync: '2026-01-03T01:58:38.246581Z'
+  POLICY-009:
+    bmad_hash: 4854b2b83b90
+    jira_key: ARGUS-640
+    last_sync: '2026-01-03T01:58:39.536532Z'
+  POLICY-010:
+    bmad_hash: 6ae10533dafe
+    jira_key: ARGUS-641
+    last_sync: '2026-01-03T01:58:40.806465Z'
+  RISK-001:
+    bmad_hash: synced
+    jira_key: ARGUS-252
+    last_sync: '2026-01-03T01:34:17.870165Z'
+  RISK-002:
+    bmad_hash: synced
+    jira_key: ARGUS-253
+    last_sync: '2026-01-03T01:34:17.870167Z'
+  RISK-003:
+    bmad_hash: synced
+    jira_key: ARGUS-254
+    last_sync: '2026-01-03T01:34:17.870168Z'
+  RISK-004:
+    bmad_hash: synced
+    jira_key: ARGUS-255
+    last_sync: '2026-01-03T01:34:17.870170Z'
+  RISK-005:
+    bmad_hash: synced
+    jira_key: ARGUS-256
+    last_sync: '2026-01-03T01:34:17.870171Z'
+  RISK-006:
+    bmad_hash: synced
+    jira_key: ARGUS-257
+    last_sync: '2026-01-03T01:34:17.870173Z'
+  RISK-007:
+    bmad_hash: synced
+    jira_key: ARGUS-258
+    last_sync: '2026-01-03T01:34:17.870174Z'
+  RISK-008:
+    bmad_hash: synced
+    jira_key: ARGUS-259
+    last_sync: '2026-01-03T01:34:17.870176Z'
+  RISK-009:
+    bmad_hash: synced
+    jira_key: ARGUS-260
+    last_sync: '2026-01-03T01:34:17.870177Z'
+  RISK-010:
+    bmad_hash: synced
+    jira_key: ARGUS-261
+    last_sync: '2026-01-03T01:34:17.870179Z'
+  RISK-011:
+    bmad_hash: synced
+    jira_key: ARGUS-262
+    last_sync: '2026-01-03T01:34:17.870181Z'
+  RISK-012:
+    bmad_hash: synced
+    jira_key: ARGUS-263
+    last_sync: '2026-01-03T01:34:17.870182Z'
+  RISK-013:
+    bmad_hash: synced
+    jira_key: ARGUS-264
+    last_sync: '2026-01-03T01:34:17.870184Z'
+  RISK-014:
+    bmad_hash: synced
+    jira_key: ARGUS-265
+    last_sync: '2026-01-03T01:34:17.870186Z'
+  RISK-015:
+    bmad_hash: synced
+    jira_key: ARGUS-266
+    last_sync: '2026-01-03T01:34:17.870187Z'
+  RISK-016:
+    bmad_hash: synced
+    jira_key: ARGUS-267
+    last_sync: '2026-01-03T01:34:17.870188Z'
+  RISK-017:
+    bmad_hash: synced
+    jira_key: ARGUS-268
+    last_sync: '2026-01-03T01:34:17.870190Z'
+  RISK-018:
+    bmad_hash: synced
+    jira_key: ARGUS-269
+    last_sync: '2026-01-03T01:34:17.870191Z'
+  RISK-019:
+    bmad_hash: synced
+    jira_key: ARGUS-270
+    last_sync: '2026-01-03T01:34:17.870192Z'
+  RISK-020:
+    bmad_hash: synced
+    jira_key: ARGUS-271
+    last_sync: '2026-01-03T01:34:17.870193Z'
+  RISK-021:
+    bmad_hash: synced
+    jira_key: ARGUS-272
+    last_sync: '2026-01-03T01:34:17.870195Z'
+  RISK-022:
+    bmad_hash: synced
+    jira_key: ARGUS-273
+    last_sync: '2026-01-03T01:34:17.870196Z'
+  RISK-023:
+    bmad_hash: synced
+    jira_key: ARGUS-274
+    last_sync: '2026-01-03T01:34:17.870197Z'
+  RISK-024:
+    bmad_hash: synced
+    jira_key: ARGUS-275
+    last_sync: '2026-01-03T01:34:17.870199Z'
+  RISK-025:
+    bmad_hash: synced
+    jira_key: ARGUS-276
+    last_sync: '2026-01-03T01:34:17.870200Z'
+  RISK-026:
+    bmad_hash: synced
+    jira_key: ARGUS-277
+    last_sync: '2026-01-03T01:34:17.870201Z'
+  RISK-027:
+    bmad_hash: synced
+    jira_key: ARGUS-278
+    last_sync: '2026-01-03T01:34:17.870202Z'
+  RISK-028:
+    bmad_hash: synced
+    jira_key: ARGUS-279
+    last_sync: '2026-01-03T01:34:17.870203Z'
+  RISK-029:
+    bmad_hash: synced
+    jira_key: ARGUS-280
+    last_sync: '2026-01-03T01:34:17.870205Z'
+  RISK-030:
+    bmad_hash: synced
+    jira_key: ARGUS-281
+    last_sync: '2026-01-03T01:34:17.870206Z'
+  RISK-031:
+    bmad_hash: synced
+    jira_key: ARGUS-282
+    last_sync: '2026-01-03T01:34:17.870207Z'
+  RISK-032:
+    bmad_hash: synced
+    jira_key: ARGUS-283
+    last_sync: '2026-01-03T01:34:17.870208Z'
+  RISK-033:
+    bmad_hash: synced
+    jira_key: ARGUS-284
+    last_sync: '2026-01-03T01:34:17.870210Z'
+  RISK-034:
+    bmad_hash: synced
+    jira_key: ARGUS-285
+    last_sync: '2026-01-03T01:34:17.870211Z'
+  RISK-035:
+    bmad_hash: synced
+    jira_key: ARGUS-286
+    last_sync: '2026-01-03T01:34:17.870212Z'
+  RISK-100:
+    bmad_hash: synced
+    jira_key: ARGUS-287
+    last_sync: '2026-01-03T01:34:17.870213Z'
+  RISK-101:
+    bmad_hash: synced
+    jira_key: ARGUS-288
+    last_sync: '2026-01-03T01:34:17.870214Z'
+  RISK-102:
+    bmad_hash: synced
+    jira_key: ARGUS-289
+    last_sync: '2026-01-03T01:34:17.870216Z'
+  RISK-103:
+    bmad_hash: synced
+    jira_key: ARGUS-290
+    last_sync: '2026-01-03T01:34:17.870217Z'
+  RISK-104:
+    bmad_hash: synced
+    jira_key: ARGUS-291
+    last_sync: '2026-01-03T01:34:17.870219Z'
+  RISK-105:
+    bmad_hash: synced
+    jira_key: ARGUS-292
+    last_sync: '2026-01-03T01:34:17.870221Z'
+  RISK-106:
+    bmad_hash: synced
+    jira_key: ARGUS-293
+    last_sync: '2026-01-03T01:34:17.870223Z'
+  RISK-107:
+    bmad_hash: synced
+    jira_key: ARGUS-294
+    last_sync: '2026-01-03T01:34:17.870225Z'
+  RISK-108:
+    bmad_hash: synced
+    jira_key: ARGUS-295
+    last_sync: '2026-01-03T01:34:17.870227Z'
+  RISK-109:
+    bmad_hash: synced
+    jira_key: ARGUS-296
+    last_sync: '2026-01-03T01:34:17.870228Z'
+  RISK-110:
+    bmad_hash: synced
+    jira_key: ARGUS-297
+    last_sync: '2026-01-03T01:34:17.870230Z'
+  RISK-111:
+    bmad_hash: synced
+    jira_key: ARGUS-298
+    last_sync: '2026-01-03T01:34:17.870231Z'
+  RISK-112:
+    bmad_hash: synced
+    jira_key: ARGUS-299
+    last_sync: '2026-01-03T01:34:17.870232Z'
+  RISK-113:
+    bmad_hash: synced
+    jira_key: ARGUS-300
+    last_sync: '2026-01-03T01:34:17.870233Z'
+  RISK-114:
+    bmad_hash: synced
+    jira_key: ARGUS-301
+    last_sync: '2026-01-03T01:34:17.870236Z'
+  RISK-115:
+    bmad_hash: synced
+    jira_key: ARGUS-302
+    last_sync: '2026-01-03T01:34:17.870237Z'
+  RISK-116:
+    bmad_hash: synced
+    jira_key: ARGUS-303
+    last_sync: '2026-01-03T01:34:17.870238Z'
+  RISK-117:
+    bmad_hash: synced
+    jira_key: ARGUS-304
+    last_sync: '2026-01-03T01:34:17.870240Z'
+  RISK-118:
+    bmad_hash: synced
+    jira_key: ARGUS-305
+    last_sync: '2026-01-03T01:34:17.870241Z'
+  RISK-119:
+    bmad_hash: synced
+    jira_key: ARGUS-306
+    last_sync: '2026-01-03T01:34:17.870243Z'
+  RISK-120:
+    bmad_hash: synced
+    jira_key: ARGUS-307
+    last_sync: '2026-01-03T01:34:17.870244Z'
+  RISK-121:
+    bmad_hash: synced
+    jira_key: ARGUS-308
+    last_sync: '2026-01-03T01:34:17.870246Z'
+  RISK-122:
+    bmad_hash: synced
+    jira_key: ARGUS-309
+    last_sync: '2026-01-03T01:34:17.870247Z'
+  RISK-123:
+    bmad_hash: synced
+    jira_key: ARGUS-310
+    last_sync: '2026-01-03T01:34:17.870249Z'
+  UX-001:
+    bmad_hash: 7aa600f739a3
+    jira_key: ARGUS-462
+    last_sync: '2026-01-03T01:54:22.259107Z'
+  UX-002:
+    bmad_hash: 53f108b8f188
+    jira_key: ARGUS-463
+    last_sync: '2026-01-03T01:54:23.426223Z'
+  UX-003:
+    bmad_hash: f6dccb9d5219
+    jira_key: ARGUS-464
+    last_sync: '2026-01-03T01:54:24.736497Z'
+  UX-004:
+    bmad_hash: d64d36f4c41d
+    jira_key: ARGUS-465
+    last_sync: '2026-01-03T01:54:25.909151Z'
+  UX-005:
+    bmad_hash: 76be643e3c2c
+    jira_key: ARGUS-466
+    last_sync: '2026-01-03T01:54:27.258394Z'
+  UX-006:
+    bmad_hash: cc4a8dcefa92
+    jira_key: ARGUS-467
+    last_sync: '2026-01-03T01:54:28.592681Z'
+  UX-007:
+    bmad_hash: e059ac0b2788
+    jira_key: ARGUS-468
+    last_sync: '2026-01-03T01:54:29.886232Z'
+  UX-008:
+    bmad_hash: 4ade2db09461
+    jira_key: ARGUS-469
+    last_sync: '2026-01-03T01:54:31.003212Z'
+  UX-009:
+    bmad_hash: 573754c61600
+    jira_key: ARGUS-470
+    last_sync: '2026-01-03T01:54:32.165361Z'
+  UX-010:
+    bmad_hash: 885fca0236dc
+    jira_key: ARGUS-471
+    last_sync: '2026-01-03T01:54:33.491439Z'
+  UX-011:
+    bmad_hash: 7f4afad48a9b
+    jira_key: ARGUS-472
+    last_sync: '2026-01-03T01:54:34.832423Z'
+  UX-012:
+    bmad_hash: 62e9eb721305
+    jira_key: ARGUS-473
+    last_sync: '2026-01-03T01:54:36.036171Z'
+  UX-013:
+    bmad_hash: '562721340005'
+    jira_key: ARGUS-474
+    last_sync: '2026-01-03T01:54:37.293691Z'
+  UX-014:
+    bmad_hash: 7ee97683945e
+    jira_key: ARGUS-475
+    last_sync: '2026-01-03T01:54:38.555586Z'
+  UX-015:
+    bmad_hash: d30b22d80c18
+    jira_key: ARGUS-476
+    last_sync: '2026-01-03T01:54:39.664950Z'
+  UX-016:
+    bmad_hash: 9101f4721dac
+    jira_key: ARGUS-477
+    last_sync: '2026-01-03T01:54:40.982531Z'
+  UX-017:
+    bmad_hash: c7f5033f9dba
+    jira_key: ARGUS-478
+    last_sync: '2026-01-03T01:54:42.210417Z'
+  UX-018:
+    bmad_hash: 471e6a2747e0
+    jira_key: ARGUS-479
+    last_sync: '2026-01-03T01:54:43.308803Z'
+  UX-019:
+    bmad_hash: 141094c50e02
+    jira_key: ARGUS-480
+    last_sync: '2026-01-03T01:54:44.520180Z'
+  UX-020:
+    bmad_hash: 905efe926d11
+    jira_key: ARGUS-481
+    last_sync: '2026-01-03T01:54:45.698039Z'
+  UX-021:
+    bmad_hash: acd77067fe88
+    jira_key: ARGUS-482
+    last_sync: '2026-01-03T01:54:47.023667Z'
+  UX-022:
+    bmad_hash: ab186157b792
+    jira_key: ARGUS-483
+    last_sync: '2026-01-03T01:54:48.252451Z'
+  UX-023:
+    bmad_hash: 2f4fe4915947
+    jira_key: ARGUS-484
+    last_sync: '2026-01-03T01:54:49.482147Z'
+  UX-024:
+    bmad_hash: da4d3b7ce5ee
+    jira_key: ARGUS-485
+    last_sync: '2026-01-03T01:54:50.811911Z'
+  UX-025:
+    bmad_hash: f25a3e093eb4
+    jira_key: ARGUS-486
+    last_sync: '2026-01-03T01:54:52.072802Z'
+  UX-026:
+    bmad_hash: '479932951290'
+    jira_key: ARGUS-487
+    last_sync: '2026-01-03T01:54:53.464028Z'
+  UX-027:
+    bmad_hash: 6f1667dc6738
+    jira_key: ARGUS-488
+    last_sync: '2026-01-03T01:54:54.712027Z'
+  UX-028:
+    bmad_hash: 01e89858b98a
+    jira_key: ARGUS-489
+    last_sync: '2026-01-03T01:54:55.882431Z'
+  UX-029:
+    bmad_hash: f5508e79852b
+    jira_key: ARGUS-490
+    last_sync: '2026-01-03T01:54:57.060308Z'
+  UX-030:
+    bmad_hash: 72c03c2bb4ca
+    jira_key: ARGUS-491
+    last_sync: '2026-01-03T01:54:58.492853Z'
+  UX-031:
+    bmad_hash: ed501038de37
+    jira_key: ARGUS-492
+    last_sync: '2026-01-03T01:54:59.936896Z'
+  UX-032:
+    bmad_hash: 2119ba4236a1
+    jira_key: ARGUS-493
+    last_sync: '2026-01-03T01:55:01.261081Z'
+  UX-033:
+    bmad_hash: 9cd6a3392dcd
+    jira_key: ARGUS-494
+    last_sync: '2026-01-03T01:55:02.487431Z'
+  UX-034:
+    bmad_hash: 595f199e509e
+    jira_key: ARGUS-495
+    last_sync: '2026-01-03T01:55:03.686187Z'
+  UX-035:
+    bmad_hash: c0a3e9b9aac0
+    jira_key: ARGUS-496
+    last_sync: '2026-01-03T01:55:05.048374Z'
+  UX-036:
+    bmad_hash: b6fcab489cc3
+    jira_key: ARGUS-497
+    last_sync: '2026-01-03T01:55:06.253202Z'
+  UX-037:
+    bmad_hash: 929cfaf504c2
+    jira_key: ARGUS-498
+    last_sync: '2026-01-03T01:55:07.574350Z'
+  UX-038:
+    bmad_hash: edbf5e564d39
+    jira_key: ARGUS-499
+    last_sync: '2026-01-03T01:55:08.839046Z'
+  UX-039:
+    bmad_hash: 707407d1dd37
+    jira_key: ARGUS-500
+    last_sync: '2026-01-03T01:55:10.063405Z'
+  UX-040:
+    bmad_hash: a182935e2785
+    jira_key: ARGUS-501
+    last_sync: '2026-01-03T01:55:11.245359Z'
+  UX-041:
+    bmad_hash: 4c9f7b5be1b5
+    jira_key: ARGUS-502
+    last_sync: '2026-01-03T01:55:12.571744Z'
+  UX-042:
+    bmad_hash: a234870d2679
+    jira_key: ARGUS-503
+    last_sync: '2026-01-03T01:55:13.954041Z'
+  UX-043:
+    bmad_hash: bacfcc83deef
+    jira_key: ARGUS-504
+    last_sync: '2026-01-03T01:55:15.182609Z'
+  UX-044:
+    bmad_hash: 7b0dfe71c760
+    jira_key: ARGUS-505
+    last_sync: '2026-01-03T01:55:16.412509Z'
+  UX-045:
+    bmad_hash: 284d577815c2
+    jira_key: ARGUS-506
+    last_sync: '2026-01-03T01:55:17.627991Z'
+  UX-046:
+    bmad_hash: 5bbd3aca545f
+    jira_key: ARGUS-507
+    last_sync: '2026-01-03T01:55:18.870252Z'
+  UX-047:
+    bmad_hash: dea64421c9eb
+    jira_key: ARGUS-508
+    last_sync: '2026-01-03T01:55:20.035272Z'
+  UX-048:
+    bmad_hash: 381d81233847
+    jira_key: ARGUS-509
+    last_sync: '2026-01-03T01:55:21.390500Z'
+  UX-049:
+    bmad_hash: 8d71a5453715
+    jira_key: ARGUS-510
+    last_sync: '2026-01-03T01:55:22.556208Z'
+  UX-050:
+    bmad_hash: be091ae8d1b1
+    jira_key: ARGUS-511
+    last_sync: '2026-01-03T01:55:23.887189Z'
+  UX-051:
+    bmad_hash: 1b1f650e0469
+    jira_key: ARGUS-512
+    last_sync: '2026-01-03T01:55:25.319889Z'
+  UX-052:
+    bmad_hash: 6a910f043afa
+    jira_key: ARGUS-513
+    last_sync: '2026-01-03T01:55:26.494555Z'
+  UX-053:
+    bmad_hash: f2b1f9dddd9e
+    jira_key: ARGUS-514
+    last_sync: '2026-01-03T01:55:27.779286Z'
+  UX-054:
+    bmad_hash: e2286ab6b9b4
+    jira_key: ARGUS-515
+    last_sync: '2026-01-03T01:55:29.008623Z'
+  UX-055:
+    bmad_hash: b6b0ffddbdd5
+    jira_key: ARGUS-516
+    last_sync: '2026-01-03T01:55:30.244651Z'
+  UX-056:
+    bmad_hash: 34aec06e0f34
+    jira_key: ARGUS-517
+    last_sync: '2026-01-03T01:55:31.453695Z'
+  UX-057:
+    bmad_hash: fa78b9426c28
+    jira_key: ARGUS-518
+    last_sync: '2026-01-03T01:55:32.694779Z'
+  UX-058:
+    bmad_hash: e4b1e2594839
+    jira_key: ARGUS-519
+    last_sync: '2026-01-03T01:55:33.838558Z'
+  UX-059:
+    bmad_hash: 6b7eefe105fd
+    jira_key: ARGUS-520
+    last_sync: '2026-01-03T01:55:35.049418Z'
+  UX-060:
+    bmad_hash: b35a4c66c34f
+    jira_key: ARGUS-521
+    last_sync: '2026-01-03T01:55:36.277348Z'
+  UX-100:
+    bmad_hash: 2a44e99a4e81
+    jira_key: ARGUS-522
+    last_sync: '2026-01-03T01:55:37.572503Z'
+  UX-101:
+    bmad_hash: e9e8098b0f72
+    jira_key: ARGUS-523
+    last_sync: '2026-01-03T01:55:39.080376Z'
+  UX-102:
+    bmad_hash: a42296e0e551
+    jira_key: ARGUS-524
+    last_sync: '2026-01-03T01:55:40.650769Z'
+  UX-103:
+    bmad_hash: 3a9e192843bf
+    jira_key: ARGUS-525
+    last_sync: '2026-01-03T01:55:41.945729Z'
+  UX-104:
+    bmad_hash: abc689d1a5c0
+    jira_key: ARGUS-526
+    last_sync: '2026-01-03T01:55:43.324550Z'
+  UX-105:
+    bmad_hash: b29fbabf6c9e
+    jira_key: ARGUS-527
+    last_sync: '2026-01-03T01:55:44.617446Z'
+  UX-106:
+    bmad_hash: b02c4a10a94c
+    jira_key: ARGUS-528
+    last_sync: '2026-01-03T01:55:45.896656Z'
+  UX-107:
+    bmad_hash: 03fac9fc25f1
+    jira_key: ARGUS-529
+    last_sync: '2026-01-03T01:55:47.140228Z'
+  UX-108:
+    bmad_hash: 5742c41a62d5
+    jira_key: ARGUS-530
+    last_sync: '2026-01-03T01:55:48.359832Z'
+  UX-109:
+    bmad_hash: 8c6f50c59dcb
+    jira_key: ARGUS-531
+    last_sync: '2026-01-03T01:55:49.693898Z'
+  UX-110:
+    bmad_hash: ceddabd91c3e
+    jira_key: ARGUS-532
+    last_sync: '2026-01-03T01:55:50.977550Z'
+  UX-111:
+    bmad_hash: 1c5abfa9365a
+    jira_key: ARGUS-533
+    last_sync: '2026-01-03T01:55:52.252218Z'
+  UX-112:
+    bmad_hash: 288aaa2f5519
+    jira_key: ARGUS-534
+    last_sync: '2026-01-03T01:55:53.584025Z'
+  UX-113:
+    bmad_hash: 200800b91035
+    jira_key: ARGUS-535
+    last_sync: '2026-01-03T01:55:54.806848Z'
+  UX-114:
+    bmad_hash: 2d573e88ab94
+    jira_key: ARGUS-536
+    last_sync: '2026-01-03T01:55:55.968008Z'
+  UX-115:
+    bmad_hash: b0dcc71bfc52
+    jira_key: ARGUS-537
+    last_sync: '2026-01-03T01:55:57.169627Z'
+  UX-116:
+    bmad_hash: df7d6fac871f
+    jira_key: ARGUS-538
+    last_sync: '2026-01-03T01:55:58.499793Z'
+  UX-117:
+    bmad_hash: 96248e27023f
+    jira_key: ARGUS-539
+    last_sync: '2026-01-03T01:56:06.997860Z'
+  UX-118:
+    bmad_hash: b23c28a9ae29
+    jira_key: ARGUS-540
+    last_sync: '2026-01-03T01:56:08.228598Z'
+  UX-119:
+    bmad_hash: f0e448a90dea
+    jira_key: ARGUS-541
+    last_sync: '2026-01-03T01:56:09.458245Z'
+  UX-120:
+    bmad_hash: 705a0070333b
+    jira_key: ARGUS-542
+    last_sync: '2026-01-03T01:56:10.653355Z'
+  UX-121:
+    bmad_hash: 9626fbb7268f
+    jira_key: ARGUS-543
+    last_sync: '2026-01-03T01:56:12.184131Z'
+  UX-122:
+    bmad_hash: a4b9be8da24a
+    jira_key: ARGUS-544
+    last_sync: '2026-01-03T01:56:13.349472Z'
+  UX-123:
+    bmad_hash: ca2ce1d9211d
+    jira_key: ARGUS-545
+    last_sync: '2026-01-03T01:56:14.480808Z'
+last_sync: '2026-01-03T01:58:45.431665Z'

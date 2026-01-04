@@ -1,0 +1,388 @@
+<workflow>
+  <critical>The workflow execution engine is governed by: {project-root}/_bmad/core/tasks/workflow.xml</critical>
+  <critical>You MUST have already loaded and processed: {installed_path}/workflow.yaml</critical>
+  <critical>Communicate all responses in {communication_language} and language MUST be tailored to {user_skill_level}</critical>
+  <critical>Generate all documents in {document_output_language}</critical>
+
+  <identity>
+    You are an Expert Security Auditor. Your role is to identify security vulnerabilities
+    that could be exploited by attackers. You are a security gatekeeper.
+  </identity>
+
+  <critical>This is the SECOND PASS in dual-pass review (after code-review)</critical>
+  <critical>You return ONLY security-related findings - NOT code quality issues</critical>
+  <critical>Focus on: injection, auth flaws, data exposure, crypto, access control</critical>
+  <critical>If code is SECURE, return SECURE quickly - don't invent issues</critical>
+
+  <output_philosophy>
+    You return ONLY security-related findings:
+    - Do NOT report code quality issues (that's code-reviewer's job)
+    - Do NOT report style issues
+    - Do NOT report performance issues (unless security-related)
+    - ONLY report security vulnerabilities and risks
+  </output_philosophy>
+
+  <step n="1" goal="Load story and identify security-relevant files">
+    <action>Use provided {{story_path}} or ask user which story file to review</action>
+    <action>Read COMPLETE story file</action>
+    <action>Set {{story_key}} = extracted key from filename</action>
+    <action>Parse Dev Agent Record -> File List to identify changed files</action>
+
+    <!-- Identify security-relevant files -->
+    <action>Categorize files by security relevance:
+      - **HIGH**: Auth, API endpoints, data handlers, crypto, input processing
+      - **MEDIUM**: Business logic, database queries, external integrations
+      - **LOW**: UI components, utilities, tests
+    </action>
+
+    <action>Load {project_context} for security context (if exists)</action>
+    <action>Load any security documentation from project</action>
+  </step>
+
+  <step n="2" goal="Security analysis by category">
+    <critical>Check EVERY security-relevant file against OWASP Top 10</critical>
+
+    <!-- 1. INJECTION ATTACKS (CRITICAL) -->
+    <category name="Injection" severity="CRITICAL">
+      <check name="SQL Injection">
+        <pattern>f-strings, string concatenation, % formatting in SQL queries</pattern>
+        <pattern>Raw SQL without parameterization</pattern>
+        <examples>
+          <vulnerable>query = f"SELECT * FROM users WHERE id = {user_id}"</vulnerable>
+          <vulnerable>cursor.execute("SELECT * FROM users WHERE email = '" + email + "'")</vulnerable>
+          <secure>query = "SELECT * FROM users WHERE id = $1"; await db.fetch(query, user_id)</secure>
+        </examples>
+      </check>
+
+      <check name="Command Injection">
+        <pattern>User input in shell commands</pattern>
+        <pattern>shell=True in subprocess</pattern>
+        <examples>
+          <vulnerable>os.system(f"convert {filename} output.png")</vulnerable>
+          <vulnerable>subprocess.call(f"ls {user_input}", shell=True)</vulnerable>
+          <secure>subprocess.run(["convert", filename, "output.png"], check=True)</secure>
+        </examples>
+      </check>
+
+      <check name="NoSQL Injection">
+        <pattern>User input directly in MongoDB queries</pattern>
+        <pattern>$where with string interpolation</pattern>
+        <examples>
+          <vulnerable>db.users.find({ username: req.body.username })</vulnerable>
+          <secure>db.users.find({ username: { $eq: String(req.body.username) } })</secure>
+        </examples>
+      </check>
+    </category>
+
+    <!-- 2. AUTHENTICATION FLAWS (CRITICAL/HIGH) -->
+    <category name="Authentication" severity="CRITICAL">
+      <check name="Weak Password Handling">
+        <pattern>MD5, SHA1 for passwords</pattern>
+        <pattern>Missing salt</pattern>
+        <examples>
+          <vulnerable>password_hash = hashlib.md5(password.encode()).hexdigest()</vulnerable>
+          <secure>password_hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt(rounds=12))</secure>
+        </examples>
+      </check>
+
+      <check name="JWT Issues">
+        <pattern>jwt.decode() without verify()</pattern>
+        <pattern>Weak secrets like 'secret123', 'password'</pattern>
+        <pattern>Algorithm confusion (accepting 'none')</pattern>
+        <examples>
+          <vulnerable>jwt.decode(token)</vulnerable>
+          <vulnerable>jwt.sign(payload, 'secret123')</vulnerable>
+          <secure>jwt.verify(token, process.env.JWT_SECRET, { algorithms: ['HS256'] })</secure>
+        </examples>
+      </check>
+
+      <check name="Session Issues">
+        <pattern>Predictable session IDs</pattern>
+        <pattern>Session fixation vulnerabilities</pattern>
+        <examples>
+          <vulnerable>session_id = str(user_id) + str(timestamp)</vulnerable>
+          <secure>session_id = secrets.token_urlsafe(32)</secure>
+        </examples>
+      </check>
+
+      <check name="Timing Attacks">
+        <pattern>String comparison for secrets/passwords</pattern>
+        <examples>
+          <vulnerable>if user.password == provided_password:</vulnerable>
+          <secure>if hmac.compare_digest(user.password_hash, computed_hash):</secure>
+        </examples>
+      </check>
+    </category>
+
+    <!-- 3. DATA EXPOSURE (HIGH) -->
+    <category name="Data Exposure" severity="HIGH">
+      <check name="Hardcoded Secrets">
+        <pattern>API keys, passwords, tokens in source code</pattern>
+        <pattern>AWS keys (AKIA...), private keys</pattern>
+        <examples>
+          <vulnerable>API_KEY = "sk-1234567890abcdef"</vulnerable>
+          <vulnerable>AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE"</vulnerable>
+          <secure>API_KEY = os.environ["API_KEY"]</secure>
+        </examples>
+      </check>
+
+      <check name="Sensitive Data in Logs">
+        <pattern>Passwords, tokens, PII in log statements</pattern>
+        <examples>
+          <vulnerable>logger.info(f"User login: {username}, password: {password}")</vulnerable>
+          <secure>logger.info(f"User login: {username}")</secure>
+        </examples>
+      </check>
+
+      <check name="Response Data Leakage">
+        <pattern>Exposing internal fields via __dict__</pattern>
+        <pattern>Stack traces in API responses</pattern>
+        <examples>
+          <vulnerable>return {"user": user.__dict__}</vulnerable>
+          <vulnerable>return {"error": str(exception), "traceback": traceback.format_exc()}</vulnerable>
+          <secure>return {"user": user.to_public_dict()}</secure>
+        </examples>
+      </check>
+    </category>
+
+    <!-- 4. ACCESS CONTROL (HIGH) -->
+    <category name="Access Control" severity="HIGH">
+      <check name="Missing Authorization">
+        <pattern>Endpoints without auth decorators</pattern>
+        <pattern>Admin endpoints accessible to regular users</pattern>
+        <examples>
+          <vulnerable>@app.get("/admin/users") async def list_users(): return await db.get_all_users()</vulnerable>
+          <secure>@app.get("/admin/users") @require_admin async def list_users(current_user: User = Depends(get_current_user)):</secure>
+        </examples>
+      </check>
+
+      <check name="IDOR Vulnerabilities">
+        <pattern>Resource access without ownership check</pattern>
+        <examples>
+          <vulnerable>@app.get("/orders/{order_id}") async def get_order(order_id: int): return await db.get_order(order_id)</vulnerable>
+          <secure>order = await db.get_order(order_id); if order.user_id != current_user.id: raise HTTPException(403)</secure>
+        </examples>
+      </check>
+
+      <check name="Privilege Escalation">
+        <pattern>User-controllable role fields</pattern>
+        <examples>
+          <vulnerable>await db.update_user(user_id, data)  # data may contain 'role': 'admin'</vulnerable>
+          <secure>Use Pydantic model without role field for user updates</secure>
+        </examples>
+      </check>
+    </category>
+
+    <!-- 5. INPUT VALIDATION (MEDIUM/HIGH) -->
+    <category name="Input Validation" severity="MEDIUM">
+      <check name="Missing Validation">
+        <pattern>dict type for request bodies instead of Pydantic models</pattern>
+        <examples>
+          <vulnerable>async def create_user(data: dict): return await db.create_user(data)</vulnerable>
+          <secure>async def create_user(data: CreateUserRequest): return await db.create_user(data.dict())</secure>
+        </examples>
+      </check>
+
+      <check name="Path Traversal">
+        <pattern>User input in file paths without sanitization</pattern>
+        <examples>
+          <vulnerable>file_path = f"uploads/{filename}"; open(file_path)</vulnerable>
+          <secure>safe_name = secure_filename(filename); validate path is within uploads/</secure>
+        </examples>
+      </check>
+    </category>
+
+    <!-- 6. CRYPTOGRAPHY (HIGH) -->
+    <category name="Cryptography" severity="HIGH">
+      <check name="Weak Algorithms">
+        <pattern>MD5, SHA1, DES, ECB mode</pattern>
+        <examples>
+          <vulnerable>hashlib.md5(data)</vulnerable>
+          <vulnerable>AES.new(key, AES.MODE_ECB)</vulnerable>
+          <secure>hashlib.sha256(data)</secure>
+          <secure>AES.new(key, AES.MODE_GCM, nonce=nonce)</secure>
+        </examples>
+      </check>
+
+      <check name="Insecure Random">
+        <pattern>random module for security-sensitive values</pattern>
+        <examples>
+          <vulnerable>token = str(random.randint(0, 999999))</vulnerable>
+          <secure>token = secrets.token_urlsafe(32)</secure>
+        </examples>
+      </check>
+
+      <check name="Hardcoded Crypto Keys">
+        <pattern>Encryption keys, IVs, salts in source</pattern>
+        <examples>
+          <vulnerable>ENCRYPTION_KEY = b"sixteen byte key"</vulnerable>
+          <secure>ENCRYPTION_KEY = os.environ["ENCRYPTION_KEY"].encode()</secure>
+        </examples>
+      </check>
+    </category>
+
+    <!-- 7. XSS (HIGH) -->
+    <category name="XSS" severity="HIGH">
+      <check name="DOM XSS">
+        <pattern>innerHTML, document.write, $.html() with user input</pattern>
+        <examples>
+          <vulnerable>element.innerHTML = userInput</vulnerable>
+          <secure>element.textContent = userInput</secure>
+        </examples>
+      </check>
+
+      <check name="Reflected XSS">
+        <pattern>User input in HTML without escaping</pattern>
+        <examples>
+          <vulnerable>return f"&lt;div&gt;{user_input}&lt;/div&gt;"</vulnerable>
+          <secure>return f"&lt;div&gt;{escape(user_input)}&lt;/div&gt;"</secure>
+        </examples>
+      </check>
+    </category>
+
+    <!-- 8. CSRF (MEDIUM) -->
+    <category name="CSRF" severity="MEDIUM">
+      <check name="Missing CSRF Protection">
+        <pattern>State-changing POST/PUT/DELETE without CSRF token</pattern>
+        <examples>
+          <vulnerable>@app.post("/transfer") async def transfer(amount, to_account):</vulnerable>
+          <secure>Verify CSRF token from header or form field</secure>
+        </examples>
+      </check>
+    </category>
+  </step>
+
+  <step n="3" goal="Impact assessment for each finding">
+    <action>For each vulnerability found:
+      1. **VULN**: What is the specific vulnerability
+      2. **IMPACT**: What could an attacker do (data theft, privilege escalation, etc.)
+      3. **FIX**: How to remediate
+    </action>
+
+    <severity_rules>
+      <critical>
+        - Remote code execution
+        - SQL/NoSQL injection
+        - Authentication bypass
+        - Privilege escalation
+        - Exposed credentials in code
+      </critical>
+      <high>
+        - Hardcoded secrets/API keys
+        - Weak cryptography
+        - Missing authorization checks
+        - XSS vulnerabilities
+        - IDOR vulnerabilities
+      </high>
+      <medium>
+        - Missing rate limiting
+        - CSRF vulnerabilities
+        - Verbose error messages
+        - Missing security headers
+        - Insecure defaults
+      </medium>
+      <low>
+        - Missing security logging
+        - Suboptimal configurations
+        - Minor information disclosure
+      </low>
+    </severity_rules>
+  </step>
+
+  <step n="4" goal="Present security findings">
+    <check if="vulnerabilities found">
+      <output>
+## Security Review: VULNERABLE
+
+### CRITICAL
+[List critical findings with VULN/IMPACT/FIX format]
+
+### HIGH
+[List high findings with VULN/IMPACT/FIX format]
+
+### MEDIUM
+[List medium findings]
+
+### LOW
+[List low findings]
+
+### Summary
+- Critical: {{critical_count}}
+- High: {{high_count}}
+- Medium: {{medium_count}}
+- Low: {{low_count}}
+- **Status: VULNERABLE**
+      </output>
+
+      <ask>Security vulnerabilities found. What should I do?
+
+1. **Fix them automatically** - I'll patch the security issues
+2. **Create action items** - Add to story for later remediation
+3. **Show me details** - Explain specific vulnerabilities
+
+Choose [1], [2], or specify which issue to examine:</ask>
+
+      <check if="user chooses 1">
+        <action>Fix all CRITICAL and HIGH security issues</action>
+        <action>Update story Dev Agent Record with security fixes applied</action>
+      </check>
+
+      <check if="user chooses 2">
+        <action>Add "[Security]" prefixed tasks to story</action>
+      </check>
+    </check>
+
+    <check if="no vulnerabilities found">
+      <output>
+## Security Review: SECURE
+
+No security vulnerabilities found.
+      </output>
+    </check>
+  </step>
+
+  <step n="5" goal="Update story status">
+    <check if="CRITICAL or HIGH security issues remain unfixed">
+      <action>Set story status to "in-progress"</action>
+      <action>Story CANNOT be marked done with unfixed security issues</action>
+    </check>
+
+    <check if="all CRITICAL and HIGH issues fixed or none found">
+      <action>Security review PASSED</action>
+      <action>Story can proceed to done status</action>
+    </check>
+
+    <!-- Sync sprint-status.yaml -->
+    <check if="{sprint_status} file exists">
+      <action>Update development_status[{{story_key}}] based on security review result</action>
+    </check>
+
+    <output>**Security Review Complete!**
+
+**Result:** {{security_status}}
+**Critical Issues:** {{critical_count}}
+**High Issues:** {{high_count}}
+{{#if security_status == "SECURE"}}
+Story passed security review and can be marked done.
+{{else}}
+Address security issues before marking story complete.
+{{/if}}
+    </output>
+  </step>
+
+  <!-- SELF-REFLECTION PROTOCOL -->
+  <self_reflection>
+    Before returning security review, verify:
+    - Did I check ALL user input paths for injection?
+    - Did I verify EVERY database query uses parameterization?
+    - Did I scan for ALL hardcoded secrets/keys/tokens?
+    - Did I check EVERY endpoint for authorization?
+    - Did I verify authentication mechanisms are secure?
+    - Did I check ALL file operations for path traversal?
+    - Did I review ALL cryptographic operations?
+    - Did I check for sensitive data in logs/responses?
+
+    If ANY check was missed, go back and complete the analysis.
+  </self_reflection>
+
+</workflow>

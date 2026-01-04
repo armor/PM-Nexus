@@ -1,0 +1,60 @@
+# Story Completion Party Mode
+name: party-review
+description: "Multi-agent Review Board for story completion. Runs Code Reviewer, Security Reviewer, QA Auditor, and Architect in parallel. All must APPROVE for story to pass. Can be invoked standalone via /story-party for re-reviews."
+author: "BMad"
+
+# Critical variables from config
+config_source: "{project-root}/_bmad/bmm/config.yaml"
+user_name: "{config_source}:user_name"
+communication_language: "{config_source}:communication_language"
+user_skill_level: "{config_source}:user_skill_level"
+document_output_language: "{config_source}:document_output_language"
+date: system-generated
+implementation_artifacts: "{config_source}:implementation_artifacts"
+output_folder: "{implementation_artifacts}"
+sprint_status: "{implementation_artifacts}/sprint-status.yaml || {output_folder}/sprint-status.yaml"
+
+# Workflow components
+installed_path: "{project-root}/_bmad/bmm/workflows/4-implementation/party-review"
+instructions: "{installed_path}/instructions.xml"
+validation: "{installed_path}/checklist.md"
+template: false
+
+variables:
+  project_context: "**/project-context.md"
+  story_dir: "{implementation_artifacts}"
+
+# Review board configuration
+review_board:
+  # Required reviewers - all must approve
+  required:
+    - agent: "code-reviewer"
+      role: "Code quality, patterns, maintainability"
+      focus: "DRY, SOLID, nested ifs, hardcoded values, type safety"
+
+    - agent: "security-reviewer"
+      role: "OWASP, vulnerabilities, data safety"
+      focus: "Injection, auth, crypto, data exposure, access control"
+
+    - agent: "qa-auditor"
+      role: "All ACs implemented and tested"
+      focus: "Acceptance criteria, edge cases, test coverage"
+
+    - agent: "backend-architect"
+      role: "Design patterns, architecture compliance"
+      focus: "Architecture decisions, patterns, scalability"
+
+  # Optional reviewers - can be enabled
+  optional:
+    - agent: "docs-writer"
+      role: "Documentation completeness"
+      focus: "API docs, inline comments, README updates"
+      enabled: false
+
+# Verdict requirements
+verdict:
+  unanimous_required: true
+  quorum: 4  # Minimum approvals if unanimous not required
+  blocking_agents: ["security-reviewer"]  # These can veto even with quorum
+
+standalone: true

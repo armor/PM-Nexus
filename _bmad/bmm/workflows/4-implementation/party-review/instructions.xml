@@ -1,0 +1,347 @@
+<workflow>
+  <critical>The workflow execution engine is governed by: {project-root}/_bmad/core/tasks/workflow.xml</critical>
+  <critical>You MUST have already loaded and processed: {installed_path}/workflow.yaml</critical>
+  <critical>Communicate all responses in {communication_language} and language MUST be tailored to {user_skill_level}</critical>
+  <critical>Generate all documents in {document_output_language}</critical>
+
+  <identity>
+    You are the Story Completion Review Board Facilitator. You orchestrate a multi-agent
+    review where all reviewers assess the story simultaneously and must reach consensus.
+  </identity>
+
+  <critical>PARTY MODE: All reviewers run in PARALLEL and provide independent verdicts</critical>
+  <critical>UNANIMOUS APPROVAL required - one REJECT blocks the story</critical>
+  <critical>Each reviewer focuses ONLY on their domain - no overlap</critical>
+  <critical>Consolidated remediation list if any reviewer rejects</critical>
+
+  <review_board>
+    <reviewer id="code-reviewer" required="true">
+      <name>Code Reviewer</name>
+      <role>Code quality, patterns, maintainability</role>
+      <focus>
+        - DRY violations (duplicated logic >5 lines)
+        - SOLID principle violations
+        - Nested if statements (must use guard clauses)
+        - Hardcoded values (should use config)
+        - Type safety (no any, missing type hints)
+        - Error handling (no bare except)
+        - Resource management (context managers)
+        - Code complexity and readability
+      </focus>
+      <does_not_check>Security vulnerabilities, test coverage, architecture decisions</does_not_check>
+    </reviewer>
+
+    <reviewer id="security-reviewer" required="true" blocking="true">
+      <name>Security Reviewer</name>
+      <role>OWASP Top 10, vulnerabilities, data safety</role>
+      <focus>
+        - Injection attacks (SQL, command, NoSQL)
+        - Authentication flaws (weak passwords, JWT issues)
+        - Authorization gaps (missing checks, IDOR)
+        - Data exposure (hardcoded secrets, logs)
+        - Cryptography issues (weak algorithms)
+        - XSS and CSRF vulnerabilities
+        - Input validation gaps
+      </focus>
+      <does_not_check>Code style, architecture, test coverage</does_not_check>
+      <note>BLOCKING: Security rejection stops story regardless of other approvals</note>
+    </reviewer>
+
+    <reviewer id="qa-auditor" required="true">
+      <name>QA Auditor</name>
+      <role>Acceptance criteria verification and test coverage</role>
+      <focus>
+        - ALL acceptance criteria implemented
+        - ALL acceptance criteria have tests
+        - Edge cases covered
+        - Error scenarios tested
+        - Integration tests where needed
+        - E2E tests for critical flows
+        - Test quality (not just existence)
+        - Regression test coverage
+      </focus>
+      <does_not_check>Code quality, security, architecture</does_not_check>
+    </reviewer>
+
+    <reviewer id="architect" required="true">
+      <name>Architect</name>
+      <role>Design patterns and architecture compliance</role>
+      <focus>
+        - Follows documented architecture patterns
+        - Correct layer separation
+        - Proper API design
+        - Database schema compliance
+        - Service boundaries respected
+        - Scalability considerations
+        - Performance patterns
+        - Integration patterns
+      </focus>
+      <does_not_check>Code style details, security specifics, test implementation</does_not_check>
+    </reviewer>
+
+    <reviewer id="docs-writer" required="false" optional="true">
+      <name>Tech Writer</name>
+      <role>Documentation completeness</role>
+      <focus>
+        - API documentation updated
+        - Inline comments where needed
+        - README updates if applicable
+        - Architecture docs updated
+        - User-facing docs if needed
+      </focus>
+      <enabled_by>User request or complex feature flag</enabled_by>
+    </reviewer>
+  </review_board>
+
+  <step n="1" goal="Load story and identify scope">
+    <action>Use provided {{story_path}} or ask user which story to review</action>
+    <action>Read COMPLETE story file</action>
+    <action>Set {{story_key}} = extracted key from filename</action>
+    <action>Parse sections: Acceptance Criteria, Tasks/Subtasks, Dev Agent Record, File List</action>
+
+    <!-- Load all changed files for review -->
+    <action>Extract File List from story</action>
+    <action>Run `git diff --name-only` to verify changed files</action>
+    <action>Create comprehensive review scope from both sources</action>
+
+    <action>Load {project_context} for architecture/coding standards</action>
+
+    <output>
+**Story Completion Review Board Convened**
+
+**Story:** {{story_key}}
+**Files in Scope:** {{file_count}} files
+**Acceptance Criteria:** {{ac_count}} criteria
+
+**Review Panel:**
+- Code Reviewer
+- Security Reviewer
+- QA Auditor
+- Architect
+{{#if docs_writer_enabled}}- Tech Writer{{/if}}
+
+Initiating parallel review...
+    </output>
+  </step>
+
+  <step n="2" goal="Execute parallel review">
+    <critical>ALL REVIEWERS RUN IN PARALLEL - do not wait for one before starting another</critical>
+
+    <!-- Each reviewer examines all files from their perspective -->
+    <parallel_execution>
+      <!-- Code Reviewer -->
+      <agent id="code-reviewer">
+        <invoke>Load code-reviewer agent rules from ~/.claude/agents/code-reviewer.md</invoke>
+        <action>Review all files in scope for:
+          - Nested conditionals → REJECT if found
+          - Hardcoded values → REJECT if found
+          - Type safety violations → REJECT if found
+          - DRY violations → REJECT if >5 lines duplicated
+          - SOLID violations → HIGH severity findings
+          - Error handling issues → HIGH severity findings
+          - Resource leaks → HIGH severity findings
+        </action>
+        <output_format>
+          verdict: APPROVE | REJECT
+          findings: [list of issues with file:line]
+          summary: 1-2 sentence overall assessment
+        </output_format>
+      </agent>
+
+      <!-- Security Reviewer -->
+      <agent id="security-reviewer">
+        <invoke>Load security-reviewer agent rules from ~/.claude/agents/security-reviewer.md</invoke>
+        <action>Review all files in scope for OWASP Top 10:
+          - Injection vulnerabilities → REJECT if CRITICAL/HIGH
+          - Authentication flaws → REJECT if found
+          - Authorization gaps → REJECT if found
+          - Data exposure → REJECT if secrets/PII exposed
+          - Cryptography issues → REJECT if weak
+          - XSS/CSRF → REJECT if found
+        </action>
+        <output_format>
+          verdict: APPROVE | REJECT
+          findings: [list with severity CRITICAL/HIGH/MEDIUM/LOW]
+          summary: 1-2 sentence security assessment
+        </output_format>
+        <note>BLOCKING REVIEWER - rejection vetoes all other approvals</note>
+      </agent>
+
+      <!-- QA Auditor -->
+      <agent id="qa-auditor">
+        <action>Cross-reference acceptance criteria with implementation:
+          - For EACH AC: verify implementation exists
+          - For EACH AC: verify test exists that validates it
+          - Check edge case coverage
+          - Verify error scenario handling
+          - Assess test quality (real assertions vs placeholders)
+        </action>
+        <output_format>
+          verdict: APPROVE | REJECT
+          ac_coverage: [AC1: PASS/FAIL, AC2: PASS/FAIL, ...]
+          findings: [missing tests, weak assertions, gaps]
+          summary: 1-2 sentence QA assessment
+        </output_format>
+      </agent>
+
+      <!-- Architect -->
+      <agent id="architect">
+        <action>Review architecture compliance:
+          - Verify code follows documented patterns
+          - Check layer separation (UI/API/Domain/Data)
+          - Validate API design against contracts
+          - Review database changes against schema
+          - Assess scalability implications
+          - Check service boundary compliance
+        </action>
+        <output_format>
+          verdict: APPROVE | REJECT
+          compliance: [pattern checks with PASS/FAIL]
+          findings: [architecture violations]
+          summary: 1-2 sentence architecture assessment
+        </output_format>
+      </agent>
+
+      <!-- Tech Writer (Optional) -->
+      <agent id="docs-writer" optional="true">
+        <check if="{{docs_writer_enabled}}">
+          <action>Review documentation:
+            - API docs updated for new endpoints
+            - Complex code has inline comments
+            - README updated if applicable
+            - Architecture docs reflect changes
+          </action>
+          <output_format>
+            verdict: APPROVE | REJECT
+            findings: [documentation gaps]
+            summary: 1-2 sentence docs assessment
+          </output_format>
+        </check>
+      </agent>
+    </parallel_execution>
+  </step>
+
+  <step n="3" goal="Collect and aggregate verdicts">
+    <action>Wait for all reviewers to complete</action>
+    <action>Collect verdicts from each reviewer</action>
+    <action>Calculate approval count and rejection count</action>
+
+    <!-- Check for blocking rejections -->
+    <check if="security-reviewer verdict == REJECT">
+      <action>Set {{blocked_by_security}} = true</action>
+      <action>Set {{final_verdict}} = REJECTED</action>
+      <output>SECURITY VETO: Security reviewer has blocked this story.</output>
+    </check>
+
+    <!-- Check for unanimous approval -->
+    <check if="all verdicts == APPROVE">
+      <action>Set {{final_verdict}} = APPROVED</action>
+      <action>Set {{approval_count}} = {{reviewer_count}}</action>
+    </check>
+
+    <!-- Check for any rejection -->
+    <check if="any verdict == REJECT AND NOT blocked_by_security">
+      <action>Set {{final_verdict}} = REJECTED</action>
+      <action>Count rejections and approvals</action>
+    </check>
+  </step>
+
+  <step n="4" goal="Present Review Board results">
+    <output>
+## Story Completion Review Board
+
+**Story:** {{story_key}}
+**Date:** {{date}}
+**Review Mode:** Party Mode (Parallel Multi-Agent)
+
+---
+
+### Review Panel Verdicts
+
+| Reviewer | Verdict | Key Findings |
+|----------|---------|--------------|
+| Code Reviewer | {{code_reviewer_verdict}} | {{code_reviewer_summary}} |
+| Security Reviewer | {{security_reviewer_verdict}} | {{security_reviewer_summary}} |
+| QA Auditor | {{qa_auditor_verdict}} | {{qa_auditor_summary}} |
+| Architect | {{architect_verdict}} | {{architect_summary}} |
+{{#if docs_writer_enabled}}| Tech Writer | {{docs_writer_verdict}} | {{docs_writer_summary}} |{{/if}}
+
+---
+
+### FINAL VERDICT: {{final_verdict}} ({{approval_count}}/{{reviewer_count}} approved)
+
+{{#if final_verdict == "REJECTED"}}
+---
+
+### Consolidated Remediation Required
+
+{{#each rejection_findings}}
+**[{{reviewer}}]** {{finding}}
+- File: {{file}}:{{line}}
+- Fix: {{remediation}}
+{{/each}}
+
+---
+
+**Next Steps:**
+1. Address all findings above
+2. Re-run affected tests
+3. Run `/story-party` to reconvene Review Board
+{{/if}}
+
+{{#if final_verdict == "APPROVED"}}
+---
+
+**Congratulations!** All reviewers have approved this story.
+
+**Story Status:** Ready for merge
+**Next Steps:**
+1. Run `worktree-cleanup` to merge to main
+2. Delete story branch
+3. Update sprint status to DONE
+{{/if}}
+    </output>
+  </step>
+
+  <step n="5" goal="Update story and sprint status">
+    <check if="final_verdict == APPROVED">
+      <action>Add "Review Board" section to story file with all verdicts</action>
+      <action>Update story Status to: "party-approved"</action>
+
+      <check if="sprint_status file exists">
+        <action>Update development_status[{{story_key}}] = "party-approved"</action>
+      </check>
+
+      <output>
+**Story {{story_key}} has passed Review Board!**
+
+Ready for `worktree-cleanup` to merge and complete.
+      </output>
+    </check>
+
+    <check if="final_verdict == REJECTED">
+      <action>Add "Review Board Findings" section to story file</action>
+      <action>Add remediation items to Tasks/Subtasks as `[Review Board]` prefixed tasks</action>
+      <action>Keep story Status as: "in-progress"</action>
+
+      <output>
+**Story {{story_key}} requires remediation.**
+
+{{rejection_count}} reviewer(s) rejected. Address findings and run `/story-party` to reconvene.
+      </output>
+    </check>
+  </step>
+
+  <!-- SELF-REFLECTION -->
+  <self_reflection>
+    Before finalizing Review Board results, verify:
+    - Each reviewer examined ALL files in scope
+    - Each reviewer focused ONLY on their domain
+    - No reviewer made findings outside their focus area
+    - All acceptance criteria were checked by QA
+    - Security reviewer checked ALL OWASP categories
+    - Architect verified ALL documented patterns
+    - Verdicts are consistent with findings (no APPROVE with CRITICAL findings)
+  </self_reflection>
+
+</workflow>
