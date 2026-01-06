@@ -1,0 +1,260 @@
+{
+  "generatedAt": "2026-01-04T16:18:59.709Z",
+  "tool": "mermaid-to-svg.mjs",
+  "mermaidVersion": "11.6.0",
+  "files": [
+    {
+      "source": ".bmad/diagrams/architecture/01-system-architecture.md",
+      "diagrams": [
+        {
+          "index": 0,
+          "path": ".bmad/diagrams-svg/architecture/01-system-architecture-1.svg"
+        }
+      ]
+    },
+    {
+      "source": ".bmad/diagrams/architecture/02-platform-alignment.md",
+      "diagrams": [
+        {
+          "index": 0,
+          "path": ".bmad/diagrams-svg/architecture/02-platform-alignment-1.svg"
+        },
+        {
+          "index": 1,
+          "path": ".bmad/diagrams-svg/architecture/02-platform-alignment-2.svg"
+        },
+        {
+          "index": 2,
+          "path": ".bmad/diagrams-svg/architecture/02-platform-alignment-3.svg"
+        }
+      ]
+    },
+    {
+      "source": ".bmad/diagrams/architecture/03-mcp-integration.md",
+      "diagrams": [
+        {
+          "index": 0,
+          "path": ".bmad/diagrams-svg/architecture/03-mcp-integration-1.svg"
+        },
+        {
+          "index": 1,
+          "path": ".bmad/diagrams-svg/architecture/03-mcp-integration-2.svg"
+        },
+        {
+          "index": 2,
+          "path": ".bmad/diagrams-svg/architecture/03-mcp-integration-3.svg"
+        },
+        {
+          "index": 3,
+          "path": ".bmad/diagrams-svg/architecture/03-mcp-integration-4.svg"
+        },
+        {
+          "index": 4,
+          "path": ".bmad/diagrams-svg/architecture/03-mcp-integration-5.svg"
+        },
+        {
+          "index": 5,
+          "path": ".bmad/diagrams-svg/architecture/03-mcp-integration-6.svg"
+        },
+        {
+          "index": 6,
+          "path": ".bmad/diagrams-svg/architecture/03-mcp-integration-7.svg"
+        },
+        {
+          "index": 7,
+          "path": ".bmad/diagrams-svg/architecture/03-mcp-integration-8.svg"
+        }
+      ]
+    },
+    {
+      "source": ".bmad/diagrams/components/01-dashboard-hierarchy.md",
+      "diagrams": [
+        {
+          "index": 0,
+          "path": ".bmad/diagrams-svg/components/01-dashboard-hierarchy-1.svg"
+        },
+        {
+          "index": 1,
+          "path": ".bmad/diagrams-svg/components/01-dashboard-hierarchy-2.svg"
+        },
+        {
+          "index": 2,
+          "path": ".bmad/diagrams-svg/components/01-dashboard-hierarchy-3.svg"
+        }
+      ]
+    },
+    {
+      "source": ".bmad/diagrams/components/02-widget-dependencies.md",
+      "diagrams": [
+        {
+          "index": 1,
+          "path": ".bmad/diagrams-svg/components/02-widget-dependencies-2.svg"
+        },
+        {
+          "index": 2,
+          "path": ".bmad/diagrams-svg/components/02-widget-dependencies-3.svg"
+        },
+        {
+          "index": 3,
+          "path": ".bmad/diagrams-svg/components/02-widget-dependencies-4.svg"
+        }
+      ]
+    },
+    {
+      "source": ".bmad/diagrams/data-flows/01-dashboard-request.md",
+      "diagrams": [
+        {
+          "index": 0,
+          "path": ".bmad/diagrams-svg/data-flows/01-dashboard-request-1.svg"
+        }
+      ]
+    },
+    {
+      "source": ".bmad/diagrams/data-flows/02-connector-sync.md",
+      "diagrams": [
+        {
+          "index": 0,
+          "path": ".bmad/diagrams-svg/data-flows/02-connector-sync-1.svg"
+        }
+      ]
+    },
+    {
+      "source": ".bmad/diagrams/data-flows/03-multi-connector.md",
+      "diagrams": [
+        {
+          "index": 0,
+          "path": ".bmad/diagrams-svg/data-flows/03-multi-connector-1.svg"
+        }
+      ]
+    },
+    {
+      "source": ".bmad/diagrams/data-flows/05-real-time-updates.md",
+      "diagrams": [
+        {
+          "index": 0,
+          "path": ".bmad/diagrams-svg/data-flows/05-real-time-updates-1.svg"
+        }
+      ]
+    },
+    {
+      "source": ".bmad/diagrams/integrations/01-connector-catalog.md",
+      "diagrams": [
+        {
+          "index": 0,
+          "path": ".bmad/diagrams-svg/integrations/01-connector-catalog-1.svg"
+        },
+        {
+          "index": 1,
+          "path": ".bmad/diagrams-svg/integrations/01-connector-catalog-2.svg"
+        },
+        {
+          "index": 2,
+          "path": ".bmad/diagrams-svg/integrations/01-connector-catalog-3.svg"
+        },
+        {
+          "index": 3,
+          "path": ".bmad/diagrams-svg/integrations/01-connector-catalog-4.svg"
+        },
+        {
+          "index": 4,
+          "path": ".bmad/diagrams-svg/integrations/01-connector-catalog-5.svg"
+        }
+      ]
+    },
+    {
+      "source": ".bmad/diagrams/security/01-auth-flow.md",
+      "diagrams": [
+        {
+          "index": 0,
+          "path": ".bmad/diagrams-svg/security/01-auth-flow-1.svg"
+        },
+        {
+          "index": 1,
+          "path": ".bmad/diagrams-svg/security/01-auth-flow-2.svg"
+        },
+        {
+          "index": 2,
+          "path": ".bmad/diagrams-svg/security/01-auth-flow-3.svg"
+        },
+        {
+          "index": 3,
+          "path": ".bmad/diagrams-svg/security/01-auth-flow-4.svg"
+        },
+        {
+          "index": 4,
+          "path": ".bmad/diagrams-svg/security/01-auth-flow-5.svg"
+        },
+        {
+          "index": 5,
+          "path": ".bmad/diagrams-svg/security/01-auth-flow-6.svg"
+        }
+      ]
+    },
+    {
+      "source": ".bmad/diagrams/security/02-rbac-model.md",
+      "diagrams": [
+        {
+          "index": 0,
+          "path": ".bmad/diagrams-svg/security/02-rbac-model-1.svg"
+        },
+        {
+          "index": 1,
+          "path": ".bmad/diagrams-svg/security/02-rbac-model-2.svg"
+        },
+        {
+          "index": 2,
+          "path": ".bmad/diagrams-svg/security/02-rbac-model-3.svg"
+        },
+        {
+          "index": 3,
+          "path": ".bmad/diagrams-svg/security/02-rbac-model-4.svg"
+        },
+        {
+          "index": 4,
+          "path": ".bmad/diagrams-svg/security/02-rbac-model-5.svg"
+        }
+      ]
+    },
+    {
+      "source": ".bmad/diagrams/security/03-mcp-security-model.md",
+      "diagrams": [
+        {
+          "index": 0,
+          "path": ".bmad/diagrams-svg/security/03-mcp-security-model-1.svg"
+        },
+        {
+          "index": 1,
+          "path": ".bmad/diagrams-svg/security/03-mcp-security-model-2.svg"
+        },
+        {
+          "index": 2,
+          "path": ".bmad/diagrams-svg/security/03-mcp-security-model-3.svg"
+        },
+        {
+          "index": 3,
+          "path": ".bmad/diagrams-svg/security/03-mcp-security-model-4.svg"
+        },
+        {
+          "index": 4,
+          "path": ".bmad/diagrams-svg/security/03-mcp-security-model-5.svg"
+        },
+        {
+          "index": 5,
+          "path": ".bmad/diagrams-svg/security/03-mcp-security-model-6.svg"
+        },
+        {
+          "index": 6,
+          "path": ".bmad/diagrams-svg/security/03-mcp-security-model-7.svg"
+        },
+        {
+          "index": 7,
+          "path": ".bmad/diagrams-svg/security/03-mcp-security-model-8.svg"
+        },
+        {
+          "index": 8,
+          "path": ".bmad/diagrams-svg/security/03-mcp-security-model-9.svg"
+        }
+      ]
+    }
+  ]
+}
