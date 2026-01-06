@@ -26,10 +26,15 @@ cd UI-Uplift
 git submodule update --init --recursive
 ```
 
-**What you get:**
-- `.bmad/epics/` - 15 epics with 143 stories ready to sync
-- `docs/` - PRDs, architecture, design system
-- `_bmad/` - BMAD framework with agents and workflows
+**What you get (BMAD is pre-installed):**
+
+| Directory | Contents |
+|-----------|----------|
+| `_bmad/` | BMAD framework v6.0.0 (core, bmm, bmb, cis modules) |
+| `.bmad/epics/` | 15 epics with 143 stories ready to sync |
+| `docs/` | PRDs, architecture, design system |
+
+**No separate BMAD installation needed** - it's included in the repo.
 
 ---
 
