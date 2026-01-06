@@ -1,6 +1,8 @@
 # UI-Uplift: Product Management Command Center
 
-> **Get up and running in 20 minutes.** This repo is your single source of truth for product requirements, epics, stories, and tasks—synced to Jira and Confluence.
+> **New here?** Start with **[GETTING_STARTED.md](GETTING_STARTED.md)** - get productive in 20 minutes.
+
+This repo is your single source of truth for product requirements, epics, stories, and tasks—synced to Jira and Confluence.
 
 ---
 
@@ -561,11 +563,13 @@ What issue types are available in project STAGE?
 
 ## Getting Help
 
-- **This README** - Start here
-- **[docs/BMAD_GUIDE.md](docs/BMAD_GUIDE.md)** - Complete BMAD framework guide
-- **[CLAUDE.md](CLAUDE.md)** - Claude Code configuration
-- **[docs/README.md](docs/README.md)** - Documentation index
-- **[.bmad/epics/README.md](.bmad/epics/README.md)** - Epic portfolio
+| Doc | Purpose |
+|-----|---------|
+| **[GETTING_STARTED.md](GETTING_STARTED.md)** | 20-minute onboarding guide |
+| **[docs/BMAD_GUIDE.md](docs/BMAD_GUIDE.md)** | Complete BMAD framework reference |
+| **[.bmad/epics/README.md](.bmad/epics/README.md)** | Epic portfolio overview |
+| [CLAUDE.md](CLAUDE.md) | Claude Code configuration |
+| [docs/README.md](docs/README.md) | Documentation index |
 
 Questions? Ask Claude: *"How do I [task] in this project?"*
 
