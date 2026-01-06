@@ -435,6 +435,17 @@ docs/
 
 BMAD (Business Model Agile Delivery) provides the structure for this repo.
 
+> **Full Guide:** See **[docs/BMAD_GUIDE.md](docs/BMAD_GUIDE.md)** for complete documentation.
+
+### The BMAD Flow
+
+```
+Phase 1: ANALYSIS      → Product Brief, Research
+Phase 2: PLANNING      → PRD, UX Design
+Phase 3: SOLUTIONING   → Architecture, Epics & Stories
+Phase 4: IMPLEMENTATION → Sprint Planning, Dev Story, Code Review
+```
+
 ### Installed Modules
 
 | Module | Purpose |
@@ -457,15 +468,18 @@ output_folder: "{project-root}/.bmad"
 
 ### Available Agents
 
-BMAD provides AI agents you can invoke:
+BMAD provides AI agents you can invoke. Load them with skill commands:
 
-| Agent | Role | When to Use |
-|-------|------|-------------|
-| `pm` (John) | Product Manager | Creating PRDs, requirements |
-| `architect` (Winston) | System Architect | Technical design |
-| `sm` (Bob) | Scrum Master | Sprint planning, story prep |
-| `ux-designer` (Sally) | UX Designer | UI/UX patterns |
-| `dev` (Amelia) | Developer | Implementation guidance |
+| Agent | Skill Command | Role |
+|-------|---------------|------|
+| `pm` (John) | `/bmad:bmm:agents:pm` | PRDs, Epics & Stories |
+| `architect` (Winston) | `/bmad:bmm:agents:architect` | Architecture Document |
+| `sm` (Bob) | `/bmad:bmm:agents:sm` | Sprint Planning |
+| `ux-designer` (Sally) | `/bmad:bmm:agents:ux-designer` | UX Design |
+| `dev` (Amelia) | `/bmad:bmm:agents:dev` | Implementation |
+| `tea` (Murat) | `/bmad:bmm:agents:tea` | Test Architecture |
+
+Or load with natural language: *"Load the PM agent"*
 
 ---
 
@@ -548,6 +562,7 @@ What issue types are available in project STAGE?
 ## Getting Help
 
 - **This README** - Start here
+- **[docs/BMAD_GUIDE.md](docs/BMAD_GUIDE.md)** - Complete BMAD framework guide
 - **[CLAUDE.md](CLAUDE.md)** - Claude Code configuration
 - **[docs/README.md](docs/README.md)** - Documentation index
 - **[.bmad/epics/README.md](.bmad/epics/README.md)** - Epic portfolio
