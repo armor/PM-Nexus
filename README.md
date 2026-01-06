@@ -1,4 +1,4 @@
-# UI-Uplift: Product Management Command Center
+# PM Nexus: Product Management Command Center
 
 > **New here?** Start with **[GETTING_STARTED.md](GETTING_STARTED.md)** - get productive in 20 minutes.
 
