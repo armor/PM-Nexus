@@ -8,14 +8,14 @@
 
 | Step | Time | What You Get |
 |------|------|--------------|
-| 1. Clone Repo | 2 min | Local copy of all epics, docs, and BMAD |
+| 1. Clone Repo + Configure Name | 3 min | Local copy + BMAD knows your name |
 | 2. Jira API Token | 3 min | Ability to sync to Jira/Confluence |
 | 3. Configure MCP | 5 min | Claude can push to Jira for you |
 | 4. Learn BMAD Basics | 10 min | Invoke agents, run workflows |
 
 ---
 
-## Step 1: Clone the Repository (2 min)
+## Step 1: Clone & Configure Your Name (3 min)
 
 ```bash
 # Clone with submodules
@@ -35,6 +35,17 @@ git submodule update --init --recursive
 | `docs/` | PRDs, architecture, design system |
 
 **No separate BMAD installation needed** - it's included in the repo.
+
+### Configure Your Name
+
+Edit `_bmad/core/config.yaml`:
+
+```yaml
+user_name: Your Name          # Agents will greet you by this name
+communication_language: English
+document_output_language: English
+output_folder: "{project-root}/.bmad"
+```
 
 ---
 
